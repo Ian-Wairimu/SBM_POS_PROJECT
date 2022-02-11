@@ -13,6 +13,7 @@
 <file generated="false" name="Src/BillManagement.c" parentProject=""/>
 <file generated="false" name="Src/CashBack.c" parentProject=""/>
 <file generated="false" name="Src/CardStripe.c" parentProject=""/>
+<file generated="false" name="Src/PrinterFormat.c" parentProject=""/>
 </virtualFolder>
 <archiveFilesVirtualFolder name="Archive Files">
 <archive archiveModifierName="gmlToTbrConverter" dirParentProject="" directoryToArchive="GOAL/Resources" name="Bin/Resources.tar"/>
