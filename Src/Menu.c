@@ -7,6 +7,8 @@
 
 #include <sdk_tplus.h>
 #include "Menu.h"
+#include <stdlib.h>
+
 
 /**
  * Main menu
@@ -16,13 +18,9 @@
  * - choice 2: to exit
  *
  */
-void menuGoalDisplay(void)
+int menuGoalDisplay(void)
 {
   char choice = 0;
-  //Amount that accepts only 5 digit input
-  char amount[100] = "00000";
-  //currency
-  char curr[4] = "KSH";
 
   const char *MenuUser[] =
   { "Sale", "Bill Payment", "Sale CashBack", 0 };
@@ -33,28 +31,27 @@ void menuGoalDisplay(void)
   {
     //Display the menu using GOAL
     choice = GL_Dialog_Menu(mGoal, "POS PROJECT", MenuUser, choice,
-            GL_BUTTON_NONE , GL_KEY_0, GL_TIME_INFINITE);
+            GL_BUTTON_NONE , GL_KEY_1, GL_TIME_INFINITE);
 
     switch (choice)
     {
     case 0:
-    	choice = GL_Dialog_Amount(mGoal, NULL, "Enter amount :", "/d,/d/d/D./D/D", amount, sizeof(amount) -1 , curr, GL_ALIGN_LEFT, GL_TIME_MINUTE);
+    	saleMenuDisplay();
     	break;
     case 1:
-    	choice = GL_Dialog_Amount(mGoal, NULL, "Enter Bill :", "/d,/d/d/D./D/D", amount, sizeof(amount), NULL, GL_ALIGN_LEFT, GL_TIME_MINUTE);
+    	billMenuDisplay();
     	break;
     default:
-    	choice = GL_Dialog_Amount(mGoal, NULL, "Enter CashBack :", "/d,/d/d/D./D/D", amount, sizeof(amount), curr, GL_ALIGN_LEFT, GL_TIME_MINUTE);
-
+    	cashBackMenuDisplay();
     	break;
 
 
     }
-  } while (choice != 2);
+  } while (choice != 3);
 
   releaseUIContext();
 
-  return;
+  return EXIT_SUCCESS;
 }
 
 

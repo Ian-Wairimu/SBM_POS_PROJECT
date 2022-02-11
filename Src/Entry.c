@@ -106,7 +106,7 @@ typedef struct Params
 static char appName[OBJECT_NAME_LEN + 1];
 static char fileName[OBJECT_FILE_NAME_LEN + 1];
 static const char timeToCall[] = "Time to call\nFrom";
-static const char idleMsg[] = "\nPlease Insert\nA Smart Card...";
+static const char idleMsg[] = "\nInsert your card!\n please....";
 static const char szDate[] = "Date:%.2s/%.2s/%.2s  %.2s:%.2s\n";
 
 //T_GL_HGRAPHIC_LIB gGoalGraphicLibInstance = NULL;

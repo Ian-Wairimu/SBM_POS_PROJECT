@@ -233,6 +233,9 @@ $(OBJ_PATH)/Menu.o \
 $(OBJ_PATH)/DateScreen.o \
 $(OBJ_PATH)/Utils.o \
 $(OBJ_PATH)/MenuInterface.o \
+$(OBJ_PATH)/Sale.o \
+$(OBJ_PATH)/BillManagement.o \
+$(OBJ_PATH)/CashBack.o \
 
 #-------------------------------------------------------------------------------
 # Dependencies
@@ -350,6 +353,36 @@ $(OBJ_PATH)/MenuInterface.o: Src/MenuInterface.c $(DEPENDENCIES) $(EXTRA_DEPENDE
 	@echo "'Src/MenuInterface.c' compilation in progress..."
 	$(CC) $(CC_OPTS) -MMD -MP -o "$@" "$<"
 ifeq ($(MAKECMDGOALS), $(OBJ_PATH)/MenuInterface.o)
+	@echo "done!"
+endif
+
+ifneq ($(MAKECMDGOALS), clean)
+-include $(OBJ_PATH)/Sale.d
+endif
+$(OBJ_PATH)/Sale.o: Src/Sale.c $(DEPENDENCIES) $(EXTRA_DEPENDENCIES)
+	@echo "'Src/Sale.c' compilation in progress..."
+	$(CC) $(CC_OPTS) -MMD -MP -o "$@" "$<"
+ifeq ($(MAKECMDGOALS), $(OBJ_PATH)/Sale.o)
+	@echo "done!"
+endif
+
+ifneq ($(MAKECMDGOALS), clean)
+-include $(OBJ_PATH)/BillManagement.d
+endif
+$(OBJ_PATH)/BillManagement.o: Src/BillManagement.c $(DEPENDENCIES) $(EXTRA_DEPENDENCIES)
+	@echo "'Src/BillManagement.c' compilation in progress..."
+	$(CC) $(CC_OPTS) -MMD -MP -o "$@" "$<"
+ifeq ($(MAKECMDGOALS), $(OBJ_PATH)/BillManagement.o)
+	@echo "done!"
+endif
+
+ifneq ($(MAKECMDGOALS), clean)
+-include $(OBJ_PATH)/CashBack.d
+endif
+$(OBJ_PATH)/CashBack.o: Src/CashBack.c $(DEPENDENCIES) $(EXTRA_DEPENDENCIES)
+	@echo "'Src/CashBack.c' compilation in progress..."
+	$(CC) $(CC_OPTS) -MMD -MP -o "$@" "$<"
+ifeq ($(MAKECMDGOALS), $(OBJ_PATH)/CashBack.o)
 	@echo "done!"
 endif
 

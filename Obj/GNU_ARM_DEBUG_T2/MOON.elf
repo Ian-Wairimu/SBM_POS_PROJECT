@@ -1,19 +1,20 @@
 Obj/GNU_ARM_DEBUG_T2/MOON.axf  :
-section            size      addr
-.text              9694      4096
-.rodata            1642     13792
-.data               624   2097152
-.bss                 96   2097776
-.ARM.attributes      16         0
-.comment             35         0
-.debug_abbrev      2836         0
-.debug_info       22111         0
-.debug_line        2890         0
-.debug_frame       1256         0
-.debug_pubnames    1001         0
-.debug_aranges      384         0
-.debug_str         7315         0
-.debug_loc         1791         0
-Total             51691
+section             size      addr
+.text              34800      4096
+.rodata             3776     38896
+.data               1836   2097152
+.bss                 544   2098988
+.ARM.attributes       16         0
+.comment              35         0
+.debug_abbrev      18113         0
+.debug_info       105873         0
+.debug_line        21362         0
+.debug_frame        5184         0
+.debug_pubnames     3607         0
+.debug_aranges      1888         0
+.debug_str         14794         0
+.debug_loc         33755         0
+.debug_ranges        832         0
+Total             246415
 
 

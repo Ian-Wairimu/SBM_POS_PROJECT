@@ -9,6 +9,9 @@
 <file generated="false" name="Src/DateScreen.c" parentProject=""/>
 <file generated="false" name="Src/Utils.c" parentProject=""/>
 <file generated="false" name="Src/MenuInterface.c" parentProject=""/>
+<file generated="false" name="Src/Sale.c" parentProject=""/>
+<file generated="false" name="Src/BillManagement.c" parentProject=""/>
+<file generated="false" name="Src/CashBack.c" parentProject=""/>
 </virtualFolder>
 <archiveFilesVirtualFolder name="Archive Files">
 <archive archiveModifierName="gmlToTbrConverter" dirParentProject="" directoryToArchive="GOAL/Resources" name="Bin/Resources.tar"/>
