@@ -69,6 +69,18 @@ int saleMenuPassword(void){
 	lblPassword:
 	entry = GL_Dialog_Password(mGoal, "PASSWORD", "Enter Password :", pmask, password, sizeof(password), GL_TIME_MINUTE);
 	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
+	//verification of password
+		int ver = atoi(password);
+		if(ver != 1234){
+			Beep(0x09,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
+			Beep(0x08,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
+			Beep(0x09,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
+			Beep(0x08,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
+			entry = GL_Dialog_Message(mGoal, "PASSWORD"," WRONG PASSWORD!!" , GL_ICON_WARNING, GL_BUTTON_NONE, 1000);
+			goto lblPassword;
+		}else if (ver == 1234){
+			goto lblValidating;
+		}
 
 		if (strlen(password) == NULL) {
 			Beep(0x09,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
@@ -84,9 +96,12 @@ int saleMenuPassword(void){
 			goto lblPassword;
 		}
 		else{
+			lblValidating:
 			entry = GL_Dialog_Message(mGoal, "PASSWORD","VALIDATING PASSWORD!" , GL_ICON_INFORMATION, GL_BUTTON_NONE, 2 * 1000);
-			return EXIT_SUCCESS;
+			goto lblVerified;
 		}
+		lblVerified:
+		entry = GL_Dialog_Message(mGoal, "PASSWORD","VERIFIED!" , GL_ICON_INFORMATION, GL_BUTTON_NONE, 2 * 1000);
 
 		if(ret == -1){
 			goto cancelled;
