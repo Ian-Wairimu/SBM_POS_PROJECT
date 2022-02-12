@@ -68,20 +68,21 @@ int saleMenuPassword(void){
 //	smartCard();
 	lblPassword:
 	entry = GL_Dialog_Password(mGoal, "PASSWORD", "Enter Password :", pmask, password, sizeof(password), GL_TIME_MINUTE);
-	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
-	//verification of password
-		int ver = atoi(password);
-		if(ver != 1234){
-			Beep(0x09,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
-			Beep(0x08,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
-			Beep(0x09,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
-			Beep(0x08,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
-			entry = GL_Dialog_Message(mGoal, "PASSWORD"," WRONG PASSWORD!!" , GL_ICON_WARNING, GL_BUTTON_NONE, 1000);
-			goto lblPassword;
-		}else if (ver == 1234){
-			goto lblValidating;
-		}
 
+//	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
+	//verification of password
+	int ver = atoi(password);
+		if (ver != 1234){
+		Beep(0x09,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
+		Beep(0x08,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
+		Beep(0x09,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
+		Beep(0x08,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
+		GL_Dialog_Message(mGoal, "PASSWORD"," WRONG PASSWORD!!" , GL_ICON_WARNING, GL_BUTTON_NONE, 1000);
+		goto lblPassword;
+		}
+		else {
+			goto lblVerification;
+		}
 		if (strlen(password) == NULL) {
 			Beep(0x09,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
 			Beep(0x08,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
@@ -95,20 +96,22 @@ int saleMenuPassword(void){
 			entry = GL_Dialog_Message(mGoal, "PASSWORD","PASSWORD MUST BE \n EQUAL TO FOUR DIGITS!!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
 			goto lblPassword;
 		}
+
 		else{
-			lblValidating:
-			entry = GL_Dialog_Message(mGoal, "PASSWORD","VALIDATING PASSWORD!" , GL_ICON_INFORMATION, GL_BUTTON_NONE, 2 * 1000);
+			lblVerification:
+			GL_Dialog_Message(mGoal, "PASSWORD","VALIDATING PASSWORD!" , GL_ICON_INFORMATION, GL_BUTTON_NONE, 2 * 1000);
 			goto lblVerified;
 		}
 		lblVerified:
-		entry = GL_Dialog_Message(mGoal, "PASSWORD","VERIFIED!" , GL_ICON_INFORMATION, GL_BUTTON_NONE, 2 * 1000);
+		GL_Dialog_Message(mGoal, "PASSWORD","VERIFIED!" , GL_ICON_INFORMATION, GL_BUTTON_NONE, 2 * 1000);
+		return 0;
 
-		if(ret == -1){
+		if(ret == 0){
 			goto cancelled;
 		}
 		cancelled:
 		GL_Dialog_Message(mGoal, NULL, "PASSWORD CANCELLED!!", GL_ICON_ERROR, GL_BUTTON_NONE, 2 * GL_TIME_SECOND);
-		return -1;
+		return 0;
 
 	return EXIT_SUCCESS;
 }
