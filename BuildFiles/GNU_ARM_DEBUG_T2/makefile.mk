@@ -236,6 +236,8 @@ $(OBJ_PATH)/MenuInterface.o \
 $(OBJ_PATH)/Sale.o \
 $(OBJ_PATH)/BillManagement.o \
 $(OBJ_PATH)/CashBack.o \
+$(OBJ_PATH)/CardStripe.o \
+$(OBJ_PATH)/PrinterFormat.o \
 
 #-------------------------------------------------------------------------------
 # Dependencies
@@ -383,6 +385,26 @@ $(OBJ_PATH)/CashBack.o: Src/CashBack.c $(DEPENDENCIES) $(EXTRA_DEPENDENCIES)
 	@echo "'Src/CashBack.c' compilation in progress..."
 	$(CC) $(CC_OPTS) -MMD -MP -o "$@" "$<"
 ifeq ($(MAKECMDGOALS), $(OBJ_PATH)/CashBack.o)
+	@echo "done!"
+endif
+
+ifneq ($(MAKECMDGOALS), clean)
+-include $(OBJ_PATH)/CardStripe.d
+endif
+$(OBJ_PATH)/CardStripe.o: Src/CardStripe.c $(DEPENDENCIES) $(EXTRA_DEPENDENCIES)
+	@echo "'Src/CardStripe.c' compilation in progress..."
+	$(CC) $(CC_OPTS) -MMD -MP -o "$@" "$<"
+ifeq ($(MAKECMDGOALS), $(OBJ_PATH)/CardStripe.o)
+	@echo "done!"
+endif
+
+ifneq ($(MAKECMDGOALS), clean)
+-include $(OBJ_PATH)/PrinterFormat.d
+endif
+$(OBJ_PATH)/PrinterFormat.o: Src/PrinterFormat.c $(DEPENDENCIES) $(EXTRA_DEPENDENCIES)
+	@echo "'Src/PrinterFormat.c' compilation in progress..."
+	$(CC) $(CC_OPTS) -MMD -MP -o "$@" "$<"
+ifeq ($(MAKECMDGOALS), $(OBJ_PATH)/PrinterFormat.o)
 	@echo "done!"
 endif
 

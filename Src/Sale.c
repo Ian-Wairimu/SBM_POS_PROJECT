@@ -23,13 +23,14 @@ int saleMenuDisplay(void){
 
 	//============================================
 	//display a dialog that will prompt user to enter amount
+	lblAmount:
 	entry = GL_Dialog_Amount(mGoal, "AMOUNT", "Enter amount :", "/d,/d/d/D./D/D", inputAmount, sizeof(inputAmount), curr, GL_ALIGN_LEFT, GL_TIME_MINUTE);
 	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
 	//=============================================
 	//will check if it is null and throw an exception
 	if(strlen(inputAmount) == NULL){
 		entry = GL_Dialog_Message(mGoal, "AMOUNT","AMOUNT CANNOT BE NULL!!!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
-		return EXIT_SUCCESS;
+		goto lblAmount;
 	}
 	//=============================================
 	//it will check if the input amount is greater that 5000
@@ -37,7 +38,7 @@ int saleMenuDisplay(void){
 	sscanf(inputAmount, "%f", &amtConv);
 	if((amtConv/100) > 5000.00 || (amtConv/100) == 5000.00){
 		entry = GL_Dialog_Message(mGoal, "AMOUNT","AMOUNT MORE THAN LIMIT!!!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
-		return EXIT_SUCCESS;
+		goto lblAmount;
 			}
 	//============================================
 	//prompt the user to insert card

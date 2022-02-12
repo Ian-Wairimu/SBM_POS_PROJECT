@@ -240,7 +240,7 @@ Linker script and memory map
                 0x00001000                . = 0x1000
                 0x00001000                __text_start = .
 
-.text           0x00001000     0x87f0
+.text           0x00001000     0x87e8
  *(.first)
  .first         0x00001000       0x8c C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/cstartupTplus.o
                 0x00001000                _start
@@ -289,383 +289,385 @@ Linker script and memory map
  .text          0x000029fc      0x12c Obj/GNU_ARM_DEBUG_T2/MenuInterface.o
                 0x000029fc                initUIContext
                 0x00002aa4                releaseUIContext
- .text          0x00002b28      0x36c Obj/GNU_ARM_DEBUG_T2/Sale.o
+ .text          0x00002b28      0x364 Obj/GNU_ARM_DEBUG_T2/Sale.o
                 0x00002b28                saleMenuDisplay
-                0x00002cf8                saleMenuPassword
- .text          0x00002e94      0x3a8 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
-                0x00002e94                billMenuDisplay
-                0x00003058                billingAmount
- .text          0x0000323c      0x2cc Obj/GNU_ARM_DEBUG_T2/CashBack.o
-                0x0000323c                cashBackMenuDisplay
-                0x000033c0                cashBackAmt
- .text          0x00003508       0x54 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Beep.o)
-                0x00003510                Beep
- .text          0x0000355c       0x74 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(extenstp1.o)
-                0x0000355c                extenslib_close
-                0x00003570                extenslib_open
-                0x000035ac                GetProcAddressExtens
- .text          0x000035d0       0x5c C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayFooter.o)
-                0x000035e0                DisplayFooter
- .text          0x0000362c       0x5c C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayHeader.o)
-                0x0000363c                DisplayHeader
- .text          0x00003688       0x58 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayLeds.o)
-                0x00003694                DisplayLeds
- .text          0x000036e0       0x60 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Read_date.o)
-                0x000036f4                Telium_Read_date
- .text          0x00003740       0x64 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_ServiceRegister.o)
-                0x00003758                Telium_ServiceRegister
- .text          0x000037a4       0x50 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Atoi.o)
-                0x000037a4                atol
-                0x000037e8                atoi
- .text          0x000037f4       0x34 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Pprintf.o)
-                0x000037f4                Telium_Pprintf
- .text          0x00003828       0x20 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Stdprt.o)
-                0x00003830                Telium_Stdprt
- .text          0x00003848       0x20 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(sprintf.o)
-                0x00003848                sprintf
- .text          0x00003868       0x78 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(toolstp1.o)
-                0x00003868                toolslib_close
-                0x0000387c                toolslib_open
-                0x000038bc                GetProcAddressTools
- .text          0x000038e0        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ApplicationGetCurrent.o)
-                0x000038e0                ApplicationGetCurrent
- .text          0x000038ee        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_close.o)
-                0x000038ee                FS_close
- .text          0x000038fc        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_length.o)
-                0x000038fc                FS_length
- .text          0x0000390a        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_mount.o)
-                0x0000390a                FS_mount
- .text          0x00003918        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_open.o)
-                0x00003918                FS_open
- .text          0x00003926        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_read.o)
-                0x00003926                FS_read
- .text          0x00003934        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_unmount.o)
-                0x00003934                FS_unmount
- .text          0x00003942        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ObjectGetInfo.o)
-                0x00003942                ObjectGetInfo
- .text          0x00003950        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Fclose.o)
-                0x00003950                Telium_Fclose
- .text          0x0000395e        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Fopen.o)
-                0x0000395e                Telium_Fopen
- .text          0x0000396c        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Stdperif.o)
-                0x0000396c                Telium_Stdperif
- .text          0x0000397a        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Ttestall.o)
-                0x0000397a                Telium_Ttestall
- .text          0x00003988        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Vfprintf.o)
-                0x00003988                Telium_Vfprintf
- .text          0x00003996        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Vsprintf.o)
-                0x00003996                Telium_Vsprintf
- .text          0x000039a4        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(first_init.o)
-                0x000039a4                first_init
- .text          0x000039b2        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(raz_init.o)
-                0x000039b2                raz_init
- .text          0x000039c0        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ufree.o)
-                0x000039c0                ufree
- .text          0x000039ce        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(umalloc.o)
-                0x000039ce                umalloc
- .text          0x000039dc        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(urealloc.o)
-                0x000039dc                urealloc
- .text          0x000039ea        0xc C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_Close.o)
-                0x000039ea                OSL_Dll_Close
- .text          0x000039f6        0xc C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_GetSymbolByName.o)
-                0x000039f6                OSL_Dll_GetSymbolByName
- .text          0x00003a02        0xc C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_OpenByAppliType.o)
-                0x00003a02                OSL_Dll_OpenByAppliType
- *fill*         0x00003a0e        0x2 00
- .text          0x00003a10       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Amount.o)
-                0x00003a1c                GL_Dialog_Amount
- .text          0x00003a34       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Menu.o)
-                0x00003a40                GL_Dialog_Menu
- .text          0x00003a58       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Message.o)
-                0x00003a64                GL_Dialog_Message
- .text          0x00003a7c       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Password.o)
-                0x00003a88                GL_Dialog_Password
- .text          0x00003aa0       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Text.o)
-                0x00003aac                GL_Dialog_Text
- .text          0x00003ac4       0xbc C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_GraphicLib_Create.o)
-                0x00003ac4                GL_GraphicLib_Create
-                0x00003b40                GL_GraphicLib_Create_Init
- .text          0x00003b80       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_GraphicLib_ReadResource.o)
-                0x00003b8c                GL_GraphicLib_ReadResource
- .text          0x00003ba4       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Label_Create.o)
-                0x00003bb0                GL_Label_Create
- .text          0x00003bc8       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Message_GetWindow.o)
-                0x00003bd4                GL_Message_GetWindow
- .text          0x00003bec       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Message_SetResult.o)
-                0x00003bf8                GL_Message_SetResult
- .text          0x00003c10       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_Destroy.o)
-                0x00003c1c                GL_Widget_Destroy
- .text          0x00003c34       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_GetText.o)
-                0x00003c40                GL_Widget_GetText
- .text          0x00003c58       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_RegisterCallback.o)
-                0x00003c64                GL_Widget_RegisterCallback
- .text          0x00003c7c       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SearchId.o)
-                0x00003c88                GL_Widget_SearchId
- .text          0x00003ca0       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetBackAlign.o)
-                0x00003cac                GL_Widget_SetBackAlign
- .text          0x00003cc4       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetFontScale.o)
-                0x00003cd0                GL_Widget_SetFontScale
- .text          0x00003ce8       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetText.o)
-                0x00003cf4                GL_Widget_SetText
- .text          0x00003d0c       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_Create.o)
-                0x00003d18                GL_Window_Create
- .text          0x00003d30       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_Dispatch.o)
-                0x00003d3c                GL_Window_Dispatch
- .text          0x00003d54       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_GetResult.o)
-                0x00003d60                GL_Window_GetResult
- .text          0x00003d78       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_MainLoop.o)
-                0x00003d84                GL_Window_MainLoop
- .text          0x00003d9c       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_PreviousFocus.o)
-                0x00003da8                GL_Window_PreviousFocus
- .text          0x00003dc0      0x114 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_link.o)
-                0x00003dc0                GL_IsPresent
-                0x00003dfc                GL_GetProcAddressWithoutExit
-                0x00003e94                GL_GetProcAddress
- .text          0x00003ed4       0x2c C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(gl_asm_link.o)
-                0x00003ed4                GL_InitFuncAndBranch
-                0x00003ee4                GL_Swi_ObjectLoad
-                0x00003ef2                GL_Swi_DllLink
- .text          0x00003f00       0x1c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
-                0x00003f00                memcpy
- .text          0x00003f1c       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
-                0x00003f1c                memset
- .text          0x00003f2c       0xa0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
-                0x00003f2c                _sscanf_r
-                0x00003f7c                sscanf
- .text          0x00003fcc       0xac C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
-                0x00003fcc                __seofread
-                0x00003fd0                __sclose
-                0x00003fe0                __sseek
-                0x00004010                __swrite
-                0x0000404c                __sread
- .text          0x00004078       0x1c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
-                0x00004078                strchr
- .text          0x00004094       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
-                0x00004094                strcpy
- .text          0x000040a4       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
-                0x000040a4                strlen
- .text          0x000040b4       0x34 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
-                0x000040b4                strncpy
- .text          0x000040e8      0xc7c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
-                0x000040e8                __ssvfscanf_r
- .text          0x00004d64       0x2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
-                0x00004d64                _write_r
- .text          0x00004d90       0x28 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
-                0x00004d90                _close_r
- .text          0x00004db8        0x0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
- .text          0x00004db8      0x1d4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
-                0x00004db8                __sfp_lock_acquire
-                0x00004dbc                __sfp_lock_release
-                0x00004dc0                __sinit_lock_acquire
-                0x00004dc4                __sinit_lock_release
-                0x00004dd0                __fp_unlock_all
-                0x00004de8                __fp_lock_all
-                0x00004e00                _cleanup_r
-                0x00004e10                _cleanup
-                0x00004e74                __sinit
-                0x00004ed0                __sfmoreglue
-                0x00004f04                __sfp
- .text          0x00004f8c       0xa8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
-                0x00004f8c                _fwalk_reent
-                0x00004fe0                _fwalk
- .text          0x00005034        0x0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
- .text          0x00005034       0x1c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
-                0x00005034                iswspace
- .text          0x00005050       0x84 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
-                0x00005050                __locale_charset
-                0x00005058                __locale_msgcharset
-                0x00005060                __locale_cjk_lang
-                0x00005064                _localeconv_r
-                0x0000506c                localeconv
-                0x00005074                _setlocale_r
-                0x000050b8                setlocale
- .text          0x000050d4       0x2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
-                0x000050d4                _lseek_r
- .text          0x00005100       0x8c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
-                0x00005100                _mbrtowc_r
-                0x00005160                mbrtowc
- .text          0x0000518c       0x64 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
-                0x0000518c                __ascii_mbtowc
-                0x000051b8                _mbtowc_r
- .text          0x000051f0       0x2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
-                0x000051f0                _read_r
- .text          0x0000521c      0x108 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
-                0x0000521c                _wrapup_reent
-                0x00005264                cleanup_glue
-                0x00005284                _reclaim_reent
- .text          0x00005324       0x7c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
-                0x00005324                __fpclassifyd
- .text          0x000053a0       0x78 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
-                0x000053a0                __sccl
- .text          0x00005418        0x8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
-                0x00005418                nanf
- .text          0x00005420       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
-                0x00005420                strcmp
- .text          0x00005434      0xc88 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
-                0x00005434                _strtod_r
-                0x0000606c                strtof
-                0x000060a0                strtod
- .text          0x000060bc      0x154 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
-                0x000060bc                _strtol_r
-                0x000061f0                strtol
- .text          0x00006210      0x128 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
-                0x00006210                _strtoul_r
-                0x00006318                strtoul
- .text          0x00006338      0x998 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
-                0x00006338                __ssrefill_r
-                0x0000637c                _sfread_r
-                0x000063f8                _sungetc_r
-                0x00006484                __ssvfiscanf_r
- .text          0x00006cd0      0x59c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
-                0x00006cd0                initialise_monitor_handles
-                0x00006d48                _kill
-                0x00006d70                _exit
-                0x00006d88                _getpid
-                0x00006d8c                _link
-                0x00006d94                _raise
-                0x00006d98                _gettimeofday
-                0x00006dc4                _times
-                0x00006e0c                _rename
-                0x00006e44                _system
-                0x00006e8c                _unlink
-                0x00006eb8                _swiopen
-                0x00006f48                _open
-                0x00006f5c                _sbrk
-                0x00006fe0                _isatty
-                0x00007004                _swiclose
-                0x00007044                _close
-                0x00007054                _swiwrite
-                0x0000707c                _write
-                0x000070e4                _swilseek
-                0x00007170                _lseek
-                0x00007180                _swiread
-                0x000071a8                _read
-                0x0000720c                _stat
-                0x00007248                _fstat
- .text          0x0000726c      0x17c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
-                0x0000726c                __submore
-                0x000072e8                _ungetc_r
-                0x000073cc                ungetc
- .text          0x000073e8        0xc C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
-                0x000073e8                __errno
- .text          0x000073f4       0xac C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
-                0x000073f4                _fclose_r
-                0x00007488                fclose
- .text          0x000074a0      0x18c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
-                0x000074a0                _fflush_r
-                0x000075f8                fflush
- .text          0x0000762c      0x54c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
-                0x0000762c                __hexdig_init
-                0x000076f8                __gethex
- .text          0x00007b78      0x170 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
-                0x00007b78                __hexnan
- .text          0x00007ce8      0x8e8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
-                0x00007ce8                _Bfree
-                0x00007d00                __hi0bits
-                0x00007d48                __lo0bits
-                0x00007dac                __mcmp
-                0x00007dec                __ulp
-                0x00007e34                __b2d
-                0x00007ef0                __ratio
-                0x00007f44                _mprec_log10
-                0x00007f84                __copybits
-                0x00007fb8                __any_on
-                0x00008008                _Balloc
-                0x0000805c                __d2b
-                0x00008124                __mdiff
-                0x00008238                __lshift
-                0x000082d0                __multiply
-                0x0000840c                __i2b
-                0x00008424                __multadd
-                0x000084b0                __pow5mult
-                0x0000854c                __s2b
- .text          0x000085d0       0x2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
-                0x000085d0                strncmp
- .text          0x000085fc       0x8c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_udivsi3.o)
-                0x000085fc                __udivsi3
-                0x000085fc                __aeabi_uidiv
-                0x00008678                __aeabi_uidivmod
- .text          0x00008688       0xa4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_divsi3.o)
-                0x00008688                __aeabi_idiv
-                0x00008688                __divsi3
-                0x0000871c                __aeabi_idivmod
- .text          0x0000872c       0xc8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_umodsi3.o)
-                0x0000872c                __umodsi3
- .text          0x000087f4        0x4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_dvmd_tls.o)
-                0x000087f4                __aeabi_ldiv0
-                0x000087f4                __div0
-                0x000087f4                __aeabi_idiv0
- .text          0x000087f8      0x430 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_addsubdf3.o)
-                0x000087f8                __aeabi_drsub
-                0x00008800                __subdf3
-                0x00008800                __aeabi_dsub
-                0x00008804                __aeabi_dadd
-                0x00008804                __adddf3
-                0x00008b14                __aeabi_ui2d
-                0x00008b14                __floatunsidf
-                0x00008b3c                __floatsidf
-                0x00008b3c                __aeabi_i2d
-                0x00008b68                __extendsfdf2
-                0x00008b68                __aeabi_f2d
-                0x00008ba8                __aeabi_ul2d
-                0x00008ba8                __floatundidf
-                0x00008bbc                __aeabi_l2d
-                0x00008bbc                __floatdidf
- .text          0x00008c28      0x49c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivdf3.o)
-                0x00008c28                __aeabi_dmul
-                0x00008c28                __muldf3
-                0x00008eb8                __aeabi_ddiv
-                0x00008eb8                __divdf3
- .text          0x000090c4      0x140 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpdf2.o)
-                0x000090c4                __gtdf2
-                0x000090c4                __gedf2
-                0x000090cc                __ltdf2
-                0x000090cc                __ledf2
-                0x000090d4                __eqdf2
-                0x000090d4                __nedf2
-                0x000090d4                __cmpdf2
-                0x00009158                __aeabi_cdrcmple
-                0x00009174                __aeabi_cdcmple
-                0x00009174                __aeabi_cdcmpeq
-                0x0000918c                __aeabi_dcmpeq
-                0x000091a4                __aeabi_dcmplt
-                0x000091bc                __aeabi_dcmple
-                0x000091d4                __aeabi_dcmpge
-                0x000091ec                __aeabi_dcmpgt
- .text          0x00009204       0x5c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixdfsi.o)
-                0x00009204                __fixdfsi
-                0x00009204                __aeabi_d2iz
- .text          0x00009260       0x54 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixunsdfsi.o)
-                0x00009260                __fixunsdfsi
-                0x00009260                __aeabi_d2uiz
- .text          0x000092b4       0xa0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_truncdfsf2.o)
-                0x000092b4                __aeabi_d2f
-                0x000092b4                __truncdfsf2
- .text          0x00009354      0x2f8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivsf3.o)
-                0x00009354                __mulsf3
-                0x00009354                __aeabi_fmul
-                0x000094ec                __divsf3
-                0x000094ec                __aeabi_fdiv
- .text          0x0000964c      0x110 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
-                0x0000964c                __gesf2
-                0x0000964c                __gtsf2
-                0x00009654                __ltsf2
-                0x00009654                __lesf2
-                0x0000965c                __nesf2
-                0x0000965c                __eqsf2
-                0x0000965c                __cmpsf2
-                0x000096bc                __aeabi_cfrcmple
-                0x000096cc                __aeabi_cfcmpeq
-                0x000096cc                __aeabi_cfcmple
-                0x000096e4                __aeabi_fcmpeq
-                0x000096fc                __aeabi_fcmplt
-                0x00009714                __aeabi_fcmple
-                0x0000972c                __aeabi_fcmpge
-                0x00009744                __aeabi_fcmpgt
- .text          0x0000975c        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(upload_diagnostic_txt.o)
-                0x0000975c                upload_diagnostic_txt
- *fill*         0x0000976a        0x6 00
- .text.stub     0x00009770       0x80 linker stubs
+                0x00002cf0                saleMenuPassword
+ .text          0x00002e8c      0x3a8 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
+                0x00002e8c                billMenuDisplay
+                0x00003050                billingAmount
+ .text          0x00003234      0x2cc Obj/GNU_ARM_DEBUG_T2/CashBack.o
+                0x00003234                cashBackMenuDisplay
+                0x000033b8                cashBackAmt
+ .text          0x00003500        0x0 Obj/GNU_ARM_DEBUG_T2/CardStripe.o
+ .text          0x00003500        0x0 Obj/GNU_ARM_DEBUG_T2/PrinterFormat.o
+ .text          0x00003500       0x54 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Beep.o)
+                0x00003508                Beep
+ .text          0x00003554       0x74 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(extenstp1.o)
+                0x00003554                extenslib_close
+                0x00003568                extenslib_open
+                0x000035a4                GetProcAddressExtens
+ .text          0x000035c8       0x5c C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayFooter.o)
+                0x000035d8                DisplayFooter
+ .text          0x00003624       0x5c C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayHeader.o)
+                0x00003634                DisplayHeader
+ .text          0x00003680       0x58 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayLeds.o)
+                0x0000368c                DisplayLeds
+ .text          0x000036d8       0x60 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Read_date.o)
+                0x000036ec                Telium_Read_date
+ .text          0x00003738       0x64 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_ServiceRegister.o)
+                0x00003750                Telium_ServiceRegister
+ .text          0x0000379c       0x50 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Atoi.o)
+                0x0000379c                atol
+                0x000037e0                atoi
+ .text          0x000037ec       0x34 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Pprintf.o)
+                0x000037ec                Telium_Pprintf
+ .text          0x00003820       0x20 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Stdprt.o)
+                0x00003828                Telium_Stdprt
+ .text          0x00003840       0x20 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(sprintf.o)
+                0x00003840                sprintf
+ .text          0x00003860       0x78 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(toolstp1.o)
+                0x00003860                toolslib_close
+                0x00003874                toolslib_open
+                0x000038b4                GetProcAddressTools
+ .text          0x000038d8        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ApplicationGetCurrent.o)
+                0x000038d8                ApplicationGetCurrent
+ .text          0x000038e6        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_close.o)
+                0x000038e6                FS_close
+ .text          0x000038f4        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_length.o)
+                0x000038f4                FS_length
+ .text          0x00003902        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_mount.o)
+                0x00003902                FS_mount
+ .text          0x00003910        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_open.o)
+                0x00003910                FS_open
+ .text          0x0000391e        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_read.o)
+                0x0000391e                FS_read
+ .text          0x0000392c        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_unmount.o)
+                0x0000392c                FS_unmount
+ .text          0x0000393a        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ObjectGetInfo.o)
+                0x0000393a                ObjectGetInfo
+ .text          0x00003948        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Fclose.o)
+                0x00003948                Telium_Fclose
+ .text          0x00003956        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Fopen.o)
+                0x00003956                Telium_Fopen
+ .text          0x00003964        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Stdperif.o)
+                0x00003964                Telium_Stdperif
+ .text          0x00003972        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Ttestall.o)
+                0x00003972                Telium_Ttestall
+ .text          0x00003980        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Vfprintf.o)
+                0x00003980                Telium_Vfprintf
+ .text          0x0000398e        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Vsprintf.o)
+                0x0000398e                Telium_Vsprintf
+ .text          0x0000399c        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(first_init.o)
+                0x0000399c                first_init
+ .text          0x000039aa        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(raz_init.o)
+                0x000039aa                raz_init
+ .text          0x000039b8        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ufree.o)
+                0x000039b8                ufree
+ .text          0x000039c6        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(umalloc.o)
+                0x000039c6                umalloc
+ .text          0x000039d4        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(urealloc.o)
+                0x000039d4                urealloc
+ .text          0x000039e2        0xc C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_Close.o)
+                0x000039e2                OSL_Dll_Close
+ .text          0x000039ee        0xc C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_GetSymbolByName.o)
+                0x000039ee                OSL_Dll_GetSymbolByName
+ .text          0x000039fa        0xc C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_OpenByAppliType.o)
+                0x000039fa                OSL_Dll_OpenByAppliType
+ *fill*         0x00003a06        0x2 00
+ .text          0x00003a08       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Amount.o)
+                0x00003a14                GL_Dialog_Amount
+ .text          0x00003a2c       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Menu.o)
+                0x00003a38                GL_Dialog_Menu
+ .text          0x00003a50       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Message.o)
+                0x00003a5c                GL_Dialog_Message
+ .text          0x00003a74       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Password.o)
+                0x00003a80                GL_Dialog_Password
+ .text          0x00003a98       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Text.o)
+                0x00003aa4                GL_Dialog_Text
+ .text          0x00003abc       0xbc C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_GraphicLib_Create.o)
+                0x00003abc                GL_GraphicLib_Create
+                0x00003b38                GL_GraphicLib_Create_Init
+ .text          0x00003b78       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_GraphicLib_ReadResource.o)
+                0x00003b84                GL_GraphicLib_ReadResource
+ .text          0x00003b9c       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Label_Create.o)
+                0x00003ba8                GL_Label_Create
+ .text          0x00003bc0       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Message_GetWindow.o)
+                0x00003bcc                GL_Message_GetWindow
+ .text          0x00003be4       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Message_SetResult.o)
+                0x00003bf0                GL_Message_SetResult
+ .text          0x00003c08       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_Destroy.o)
+                0x00003c14                GL_Widget_Destroy
+ .text          0x00003c2c       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_GetText.o)
+                0x00003c38                GL_Widget_GetText
+ .text          0x00003c50       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_RegisterCallback.o)
+                0x00003c5c                GL_Widget_RegisterCallback
+ .text          0x00003c74       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SearchId.o)
+                0x00003c80                GL_Widget_SearchId
+ .text          0x00003c98       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetBackAlign.o)
+                0x00003ca4                GL_Widget_SetBackAlign
+ .text          0x00003cbc       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetFontScale.o)
+                0x00003cc8                GL_Widget_SetFontScale
+ .text          0x00003ce0       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetText.o)
+                0x00003cec                GL_Widget_SetText
+ .text          0x00003d04       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_Create.o)
+                0x00003d10                GL_Window_Create
+ .text          0x00003d28       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_Dispatch.o)
+                0x00003d34                GL_Window_Dispatch
+ .text          0x00003d4c       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_GetResult.o)
+                0x00003d58                GL_Window_GetResult
+ .text          0x00003d70       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_MainLoop.o)
+                0x00003d7c                GL_Window_MainLoop
+ .text          0x00003d94       0x24 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_PreviousFocus.o)
+                0x00003da0                GL_Window_PreviousFocus
+ .text          0x00003db8      0x114 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_link.o)
+                0x00003db8                GL_IsPresent
+                0x00003df4                GL_GetProcAddressWithoutExit
+                0x00003e8c                GL_GetProcAddress
+ .text          0x00003ecc       0x2c C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(gl_asm_link.o)
+                0x00003ecc                GL_InitFuncAndBranch
+                0x00003edc                GL_Swi_ObjectLoad
+                0x00003eea                GL_Swi_DllLink
+ .text          0x00003ef8       0x1c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
+                0x00003ef8                memcpy
+ .text          0x00003f14       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
+                0x00003f14                memset
+ .text          0x00003f24       0xa0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
+                0x00003f24                _sscanf_r
+                0x00003f74                sscanf
+ .text          0x00003fc4       0xac C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
+                0x00003fc4                __seofread
+                0x00003fc8                __sclose
+                0x00003fd8                __sseek
+                0x00004008                __swrite
+                0x00004044                __sread
+ .text          0x00004070       0x1c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
+                0x00004070                strchr
+ .text          0x0000408c       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
+                0x0000408c                strcpy
+ .text          0x0000409c       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
+                0x0000409c                strlen
+ .text          0x000040ac       0x34 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
+                0x000040ac                strncpy
+ .text          0x000040e0      0xc7c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
+                0x000040e0                __ssvfscanf_r
+ .text          0x00004d5c       0x2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
+                0x00004d5c                _write_r
+ .text          0x00004d88       0x28 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
+                0x00004d88                _close_r
+ .text          0x00004db0        0x0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
+ .text          0x00004db0      0x1d4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
+                0x00004db0                __sfp_lock_acquire
+                0x00004db4                __sfp_lock_release
+                0x00004db8                __sinit_lock_acquire
+                0x00004dbc                __sinit_lock_release
+                0x00004dc8                __fp_unlock_all
+                0x00004de0                __fp_lock_all
+                0x00004df8                _cleanup_r
+                0x00004e08                _cleanup
+                0x00004e6c                __sinit
+                0x00004ec8                __sfmoreglue
+                0x00004efc                __sfp
+ .text          0x00004f84       0xa8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
+                0x00004f84                _fwalk_reent
+                0x00004fd8                _fwalk
+ .text          0x0000502c        0x0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
+ .text          0x0000502c       0x1c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
+                0x0000502c                iswspace
+ .text          0x00005048       0x84 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
+                0x00005048                __locale_charset
+                0x00005050                __locale_msgcharset
+                0x00005058                __locale_cjk_lang
+                0x0000505c                _localeconv_r
+                0x00005064                localeconv
+                0x0000506c                _setlocale_r
+                0x000050b0                setlocale
+ .text          0x000050cc       0x2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
+                0x000050cc                _lseek_r
+ .text          0x000050f8       0x8c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
+                0x000050f8                _mbrtowc_r
+                0x00005158                mbrtowc
+ .text          0x00005184       0x64 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
+                0x00005184                __ascii_mbtowc
+                0x000051b0                _mbtowc_r
+ .text          0x000051e8       0x2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
+                0x000051e8                _read_r
+ .text          0x00005214      0x108 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
+                0x00005214                _wrapup_reent
+                0x0000525c                cleanup_glue
+                0x0000527c                _reclaim_reent
+ .text          0x0000531c       0x7c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
+                0x0000531c                __fpclassifyd
+ .text          0x00005398       0x78 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
+                0x00005398                __sccl
+ .text          0x00005410        0x8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
+                0x00005410                nanf
+ .text          0x00005418       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
+                0x00005418                strcmp
+ .text          0x0000542c      0xc88 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
+                0x0000542c                _strtod_r
+                0x00006064                strtof
+                0x00006098                strtod
+ .text          0x000060b4      0x154 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
+                0x000060b4                _strtol_r
+                0x000061e8                strtol
+ .text          0x00006208      0x128 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
+                0x00006208                _strtoul_r
+                0x00006310                strtoul
+ .text          0x00006330      0x998 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
+                0x00006330                __ssrefill_r
+                0x00006374                _sfread_r
+                0x000063f0                _sungetc_r
+                0x0000647c                __ssvfiscanf_r
+ .text          0x00006cc8      0x59c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
+                0x00006cc8                initialise_monitor_handles
+                0x00006d40                _kill
+                0x00006d68                _exit
+                0x00006d80                _getpid
+                0x00006d84                _link
+                0x00006d8c                _raise
+                0x00006d90                _gettimeofday
+                0x00006dbc                _times
+                0x00006e04                _rename
+                0x00006e3c                _system
+                0x00006e84                _unlink
+                0x00006eb0                _swiopen
+                0x00006f40                _open
+                0x00006f54                _sbrk
+                0x00006fd8                _isatty
+                0x00006ffc                _swiclose
+                0x0000703c                _close
+                0x0000704c                _swiwrite
+                0x00007074                _write
+                0x000070dc                _swilseek
+                0x00007168                _lseek
+                0x00007178                _swiread
+                0x000071a0                _read
+                0x00007204                _stat
+                0x00007240                _fstat
+ .text          0x00007264      0x17c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
+                0x00007264                __submore
+                0x000072e0                _ungetc_r
+                0x000073c4                ungetc
+ .text          0x000073e0        0xc C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
+                0x000073e0                __errno
+ .text          0x000073ec       0xac C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
+                0x000073ec                _fclose_r
+                0x00007480                fclose
+ .text          0x00007498      0x18c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
+                0x00007498                _fflush_r
+                0x000075f0                fflush
+ .text          0x00007624      0x54c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
+                0x00007624                __hexdig_init
+                0x000076f0                __gethex
+ .text          0x00007b70      0x170 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
+                0x00007b70                __hexnan
+ .text          0x00007ce0      0x8e8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
+                0x00007ce0                _Bfree
+                0x00007cf8                __hi0bits
+                0x00007d40                __lo0bits
+                0x00007da4                __mcmp
+                0x00007de4                __ulp
+                0x00007e2c                __b2d
+                0x00007ee8                __ratio
+                0x00007f3c                _mprec_log10
+                0x00007f7c                __copybits
+                0x00007fb0                __any_on
+                0x00008000                _Balloc
+                0x00008054                __d2b
+                0x0000811c                __mdiff
+                0x00008230                __lshift
+                0x000082c8                __multiply
+                0x00008404                __i2b
+                0x0000841c                __multadd
+                0x000084a8                __pow5mult
+                0x00008544                __s2b
+ .text          0x000085c8       0x2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
+                0x000085c8                strncmp
+ .text          0x000085f4       0x8c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_udivsi3.o)
+                0x000085f4                __udivsi3
+                0x000085f4                __aeabi_uidiv
+                0x00008670                __aeabi_uidivmod
+ .text          0x00008680       0xa4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_divsi3.o)
+                0x00008680                __aeabi_idiv
+                0x00008680                __divsi3
+                0x00008714                __aeabi_idivmod
+ .text          0x00008724       0xc8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_umodsi3.o)
+                0x00008724                __umodsi3
+ .text          0x000087ec        0x4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_dvmd_tls.o)
+                0x000087ec                __aeabi_ldiv0
+                0x000087ec                __div0
+                0x000087ec                __aeabi_idiv0
+ .text          0x000087f0      0x430 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_addsubdf3.o)
+                0x000087f0                __aeabi_drsub
+                0x000087f8                __subdf3
+                0x000087f8                __aeabi_dsub
+                0x000087fc                __aeabi_dadd
+                0x000087fc                __adddf3
+                0x00008b0c                __aeabi_ui2d
+                0x00008b0c                __floatunsidf
+                0x00008b34                __floatsidf
+                0x00008b34                __aeabi_i2d
+                0x00008b60                __extendsfdf2
+                0x00008b60                __aeabi_f2d
+                0x00008ba0                __aeabi_ul2d
+                0x00008ba0                __floatundidf
+                0x00008bb4                __aeabi_l2d
+                0x00008bb4                __floatdidf
+ .text          0x00008c20      0x49c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivdf3.o)
+                0x00008c20                __aeabi_dmul
+                0x00008c20                __muldf3
+                0x00008eb0                __aeabi_ddiv
+                0x00008eb0                __divdf3
+ .text          0x000090bc      0x140 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpdf2.o)
+                0x000090bc                __gtdf2
+                0x000090bc                __gedf2
+                0x000090c4                __ltdf2
+                0x000090c4                __ledf2
+                0x000090cc                __eqdf2
+                0x000090cc                __nedf2
+                0x000090cc                __cmpdf2
+                0x00009150                __aeabi_cdrcmple
+                0x0000916c                __aeabi_cdcmple
+                0x0000916c                __aeabi_cdcmpeq
+                0x00009184                __aeabi_dcmpeq
+                0x0000919c                __aeabi_dcmplt
+                0x000091b4                __aeabi_dcmple
+                0x000091cc                __aeabi_dcmpge
+                0x000091e4                __aeabi_dcmpgt
+ .text          0x000091fc       0x5c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixdfsi.o)
+                0x000091fc                __fixdfsi
+                0x000091fc                __aeabi_d2iz
+ .text          0x00009258       0x54 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixunsdfsi.o)
+                0x00009258                __fixunsdfsi
+                0x00009258                __aeabi_d2uiz
+ .text          0x000092ac       0xa0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_truncdfsf2.o)
+                0x000092ac                __aeabi_d2f
+                0x000092ac                __truncdfsf2
+ .text          0x0000934c      0x2f8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivsf3.o)
+                0x0000934c                __mulsf3
+                0x0000934c                __aeabi_fmul
+                0x000094e4                __divsf3
+                0x000094e4                __aeabi_fdiv
+ .text          0x00009644      0x110 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
+                0x00009644                __gesf2
+                0x00009644                __gtsf2
+                0x0000964c                __ltsf2
+                0x0000964c                __lesf2
+                0x00009654                __nesf2
+                0x00009654                __eqsf2
+                0x00009654                __cmpsf2
+                0x000096b4                __aeabi_cfrcmple
+                0x000096c4                __aeabi_cfcmpeq
+                0x000096c4                __aeabi_cfcmple
+                0x000096dc                __aeabi_fcmpeq
+                0x000096f4                __aeabi_fcmplt
+                0x0000970c                __aeabi_fcmple
+                0x00009724                __aeabi_fcmpge
+                0x0000973c                __aeabi_fcmpgt
+ .text          0x00009754        0xe C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(upload_diagnostic_txt.o)
+                0x00009754                upload_diagnostic_txt
+ *fill*         0x00009762        0x6 00
+ .text.stub     0x00009768       0x80 linker stubs
  *(.gnu.linkonce.t.*)
  *(.strings .strings.*)
  *(.glue_7)
@@ -674,10 +676,10 @@ Linker script and memory map
  .glue_7t       0x00000000        0x0 linker stubs
  *(.gcc_except_table)
 
-.vfp11_veneer   0x000097f0        0x0
+.vfp11_veneer   0x000097e8        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x000097f0        0x0
+.v4_bx          0x000097e8        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
 .eh_frame
@@ -686,73 +688,73 @@ Linker script and memory map
 .jcr
  *(.jcr)
 
-.ctors          0x000097f0        0x0
-                0x000097f0                __ctors_start = .
+.ctors          0x000097e8        0x0
+                0x000097e8                __ctors_start = .
  *(SORT(.ctors.*))
  *(.ctors)
-                0x000097f0                __ctors_end = .
+                0x000097e8                __ctors_end = .
 
-.dtors          0x000097f0        0x0
-                0x000097f0                __dtors_start = .
+.dtors          0x000097e8        0x0
+                0x000097e8                __dtors_start = .
  *(SORT(.dtors.*))
  *(.dtors)
-                0x000097f0                __dtors_end = .
+                0x000097e8                __dtors_end = .
 
-.rodata         0x000097f0      0xec0
+.rodata         0x000097e8      0xec0
  *(.rodata .rodata.*)
- .rodata        0x000097f0       0x18 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/cstartupTplus.o
- .rodata        0x00009808       0xd8 Obj/GNU_ARM_DEBUG_T2/Main.o
- .rodata        0x000098e0      0x35c Obj/GNU_ARM_DEBUG_T2/Entry.o
- .rodata        0x00009c3c       0x44 Obj/GNU_ARM_DEBUG_T2/Menu.o
- .rodata        0x00009c80       0xa4 Obj/GNU_ARM_DEBUG_T2/DateScreen.o
-                0x00009c80                DATESCREEN_OK_STATUS
-                0x00009c84                DATESCREEN_CANCEL_STATUS
- .rodata        0x00009d24       0x1c Obj/GNU_ARM_DEBUG_T2/MenuInterface.o
- .rodata        0x00009d40      0x250 Obj/GNU_ARM_DEBUG_T2/Sale.o
- .rodata        0x00009f90      0x228 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
- .rodata        0x0000a1b8      0x148 Obj/GNU_ARM_DEBUG_T2/CashBack.o
+ .rodata        0x000097e8       0x18 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/cstartupTplus.o
+ .rodata        0x00009800       0xd8 Obj/GNU_ARM_DEBUG_T2/Main.o
+ .rodata        0x000098d8      0x35c Obj/GNU_ARM_DEBUG_T2/Entry.o
+ .rodata        0x00009c34       0x44 Obj/GNU_ARM_DEBUG_T2/Menu.o
+ .rodata        0x00009c78       0xa4 Obj/GNU_ARM_DEBUG_T2/DateScreen.o
+                0x00009c78                DATESCREEN_OK_STATUS
+                0x00009c7c                DATESCREEN_CANCEL_STATUS
+ .rodata        0x00009d1c       0x1c Obj/GNU_ARM_DEBUG_T2/MenuInterface.o
+ .rodata        0x00009d38      0x250 Obj/GNU_ARM_DEBUG_T2/Sale.o
+ .rodata        0x00009f88      0x228 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
+ .rodata        0x0000a1b0      0x148 Obj/GNU_ARM_DEBUG_T2/CashBack.o
  .rodata.str1.1
-                0x0000a300        0x8 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(extenstp1.o)
+                0x0000a2f8        0x8 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(extenstp1.o)
  .rodata.str1.1
                 0x00000000        0x8 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(toolstp1.o)
  .rodata.str1.1
-                0x0000a308       0x6a C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_link.o)
+                0x0000a300       0x6a C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_link.o)
  .rodata.str1.1
-                0x0000a372        0x5 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
- *fill*         0x0000a377        0x1 00
- .rodata        0x0000a378       0x38 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
- .rodata        0x0000a3b0      0x101 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
-                0x0000a3b0                _ctype_
- *fill*         0x0000a4b1        0x3 00
- .rodata        0x0000a4b4        0x4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
-                0x0000a4b4                _global_impure_ptr
+                0x0000a36a        0x5 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
+ *fill*         0x0000a36f        0x1 00
+ .rodata        0x0000a370       0x38 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
+ .rodata        0x0000a3a8      0x101 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
+                0x0000a3a8                _ctype_
+ *fill*         0x0000a4a9        0x3 00
+ .rodata        0x0000a4ac        0x4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
+                0x0000a4ac                _global_impure_ptr
  .rodata.str1.1
-                0x0000a4b8        0x2 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
+                0x0000a4b0        0x2 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
  .rodata.str1.1
-                0x0000a4ba        0x8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
+                0x0000a4b2        0x8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
                                   0xb (size before relaxing)
- *fill*         0x0000a4c2        0x2 00
- .rodata        0x0000a4c4       0x38 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
+ *fill*         0x0000a4ba        0x2 00
+ .rodata        0x0000a4bc       0x38 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
  .rodata.str1.1
                 0x00000000        0x1 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
  .rodata.str1.1
-                0x0000a4fc        0xc C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
- .rodata        0x0000a508       0x44 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
- .rodata        0x0000a54c       0x22 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
+                0x0000a4f4        0xc C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
+ .rodata        0x0000a500       0x44 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
+ .rodata        0x0000a544       0x22 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
  .rodata.str1.1
-                0x0000a56e        0x4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
+                0x0000a566        0x4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
  .rodata.str1.1
-                0x0000a572       0x19 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
- *fill*         0x0000a58b        0x1 00
- .rodata        0x0000a58c      0x124 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
-                0x0000a58c                __mprec_tens
-                0x0000a654                __mprec_bigtens
-                0x0000a67c                __mprec_tinytens
+                0x0000a56a       0x19 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
+ *fill*         0x0000a583        0x1 00
+ .rodata        0x0000a584      0x124 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
+                0x0000a584                __mprec_tens
+                0x0000a64c                __mprec_bigtens
+                0x0000a674                __mprec_tinytens
  *(.gnu.linkonce.r.*)
-                0x0000a6b0                __text_end = .
+                0x0000a6a8                __text_end = .
                 0x00200000                . = 0x200000
 
-.data           0x00200000      0x72c load address 0x0000a6b0
+.data           0x00200000      0x72c load address 0x0000a6a8
                 0x00200000                __data_start = .
  *(.data .data.*)
  .data          0x00200000        0x8 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/cstartupTplus.o
@@ -768,6 +770,8 @@ Linker script and memory map
  .data          0x00200110        0x0 Obj/GNU_ARM_DEBUG_T2/Sale.o
  .data          0x00200110        0x0 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
  .data          0x00200110        0x0 Obj/GNU_ARM_DEBUG_T2/CashBack.o
+ .data          0x00200110        0x0 Obj/GNU_ARM_DEBUG_T2/CardStripe.o
+ .data          0x00200110        0x0 Obj/GNU_ARM_DEBUG_T2/PrinterFormat.o
  .data          0x00200110        0x4 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Beep.o)
  .data          0x00200114        0x0 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(extenstp1.o)
  .data          0x00200114        0x4 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayFooter.o)
@@ -887,7 +891,7 @@ Linker script and memory map
  *(.gnu.linkonce.d.*)
                 0x0020072c                __data_end = .
 
-.bss            0x0020072c      0x220 load address 0x0000addc
+.bss            0x0020072c      0x220 load address 0x0000add4
                 0x0020072c                __bss_start = .
  *(.bss .bss.*)
  .bss           0x0020072c        0x0 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/cstartupTplus.o
@@ -902,6 +906,8 @@ Linker script and memory map
  .bss           0x00200764        0x0 Obj/GNU_ARM_DEBUG_T2/Sale.o
  .bss           0x00200764        0x0 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
  .bss           0x00200764        0x0 Obj/GNU_ARM_DEBUG_T2/CashBack.o
+ .bss           0x00200764        0x0 Obj/GNU_ARM_DEBUG_T2/CardStripe.o
+ .bss           0x00200764        0x0 Obj/GNU_ARM_DEBUG_T2/PrinterFormat.o
  .bss           0x00200764        0x0 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Beep.o)
  .bss           0x00200764        0x8 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(extenstp1.o)
                 0x00200764                DllGetProcAddress3
@@ -1042,6 +1048,8 @@ LOAD Obj/GNU_ARM_DEBUG_T2/MenuInterface.o
 LOAD Obj/GNU_ARM_DEBUG_T2/Sale.o
 LOAD Obj/GNU_ARM_DEBUG_T2/BillManagement.o
 LOAD Obj/GNU_ARM_DEBUG_T2/CashBack.o
+LOAD Obj/GNU_ARM_DEBUG_T2/CardStripe.o
+LOAD Obj/GNU_ARM_DEBUG_T2/PrinterFormat.o
 START GROUP
 LOAD C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/BarCode_TPlus.lib
 LOAD C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib
@@ -1122,225 +1130,229 @@ OUTPUT(Obj/GNU_ARM_DEBUG_T2/MOON.axf elf32-littlearm)
  .ARM.attributes
                 0x00000090       0x10 Obj/GNU_ARM_DEBUG_T2/CashBack.o
  .ARM.attributes
-                0x000000a0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Beep.o)
+                0x000000a0       0x10 Obj/GNU_ARM_DEBUG_T2/CardStripe.o
  .ARM.attributes
-                0x000000b0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(extenstp1.o)
+                0x000000b0       0x10 Obj/GNU_ARM_DEBUG_T2/PrinterFormat.o
  .ARM.attributes
-                0x000000c0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayFooter.o)
+                0x000000c0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Beep.o)
  .ARM.attributes
-                0x000000d0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayHeader.o)
+                0x000000d0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(extenstp1.o)
  .ARM.attributes
-                0x000000e0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayLeds.o)
+                0x000000e0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayFooter.o)
  .ARM.attributes
-                0x000000f0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Read_date.o)
+                0x000000f0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayHeader.o)
  .ARM.attributes
-                0x00000100       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_ServiceRegister.o)
+                0x00000100       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(DisplayLeds.o)
  .ARM.attributes
-                0x00000110       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Atoi.o)
+                0x00000110       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Read_date.o)
  .ARM.attributes
-                0x00000120       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Pprintf.o)
+                0x00000120       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_ServiceRegister.o)
  .ARM.attributes
-                0x00000130       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Stdprt.o)
+                0x00000130       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Atoi.o)
  .ARM.attributes
-                0x00000140       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(sprintf.o)
+                0x00000140       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Pprintf.o)
  .ARM.attributes
-                0x00000150       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(toolstp1.o)
+                0x00000150       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Stdprt.o)
  .ARM.attributes
-                0x00000160       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ApplicationGetCurrent.o)
+                0x00000160       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(sprintf.o)
  .ARM.attributes
-                0x00000170       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_close.o)
+                0x00000170       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(toolstp1.o)
  .ARM.attributes
-                0x00000180       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_length.o)
+                0x00000180       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ApplicationGetCurrent.o)
  .ARM.attributes
-                0x00000190       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_mount.o)
+                0x00000190       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_close.o)
  .ARM.attributes
-                0x000001a0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_open.o)
+                0x000001a0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_length.o)
  .ARM.attributes
-                0x000001b0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_read.o)
+                0x000001b0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_mount.o)
  .ARM.attributes
-                0x000001c0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_unmount.o)
+                0x000001c0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_open.o)
  .ARM.attributes
-                0x000001d0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ObjectGetInfo.o)
+                0x000001d0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_read.o)
  .ARM.attributes
-                0x000001e0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Fclose.o)
+                0x000001e0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(FS_unmount.o)
  .ARM.attributes
-                0x000001f0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Fopen.o)
+                0x000001f0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ObjectGetInfo.o)
  .ARM.attributes
-                0x00000200       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Stdperif.o)
+                0x00000200       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Fclose.o)
  .ARM.attributes
-                0x00000210       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Ttestall.o)
+                0x00000210       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Fopen.o)
  .ARM.attributes
-                0x00000220       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Vfprintf.o)
+                0x00000220       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Stdperif.o)
  .ARM.attributes
-                0x00000230       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Vsprintf.o)
+                0x00000230       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Ttestall.o)
  .ARM.attributes
-                0x00000240       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(first_init.o)
+                0x00000240       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Vfprintf.o)
  .ARM.attributes
-                0x00000250       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(raz_init.o)
+                0x00000250       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(Telium_Vsprintf.o)
  .ARM.attributes
-                0x00000260       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ufree.o)
+                0x00000260       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(first_init.o)
  .ARM.attributes
-                0x00000270       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(umalloc.o)
+                0x00000270       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(raz_init.o)
  .ARM.attributes
-                0x00000280       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(urealloc.o)
+                0x00000280       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(ufree.o)
  .ARM.attributes
-                0x00000290       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_Close.o)
+                0x00000290       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(umalloc.o)
  .ARM.attributes
-                0x000002a0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_GetSymbolByName.o)
+                0x000002a0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(urealloc.o)
  .ARM.attributes
-                0x000002b0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_OpenByAppliType.o)
+                0x000002b0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_Close.o)
  .ARM.attributes
-                0x000002c0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Amount.o)
+                0x000002c0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_GetSymbolByName.o)
  .ARM.attributes
-                0x000002d0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Menu.o)
+                0x000002d0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/OSLAYER.LIB(OSL_Dll_OpenByAppliType.o)
  .ARM.attributes
-                0x000002e0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Message.o)
+                0x000002e0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Amount.o)
  .ARM.attributes
-                0x000002f0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Password.o)
+                0x000002f0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Menu.o)
  .ARM.attributes
-                0x00000300       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Text.o)
+                0x00000300       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Message.o)
  .ARM.attributes
-                0x00000310       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_GraphicLib_Create.o)
+                0x00000310       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Password.o)
  .ARM.attributes
-                0x00000320       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_GraphicLib_ReadResource.o)
+                0x00000320       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Dialog_Text.o)
  .ARM.attributes
-                0x00000330       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Label_Create.o)
+                0x00000330       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_GraphicLib_Create.o)
  .ARM.attributes
-                0x00000340       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Message_GetWindow.o)
+                0x00000340       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_GraphicLib_ReadResource.o)
  .ARM.attributes
-                0x00000350       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Message_SetResult.o)
+                0x00000350       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Label_Create.o)
  .ARM.attributes
-                0x00000360       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_Destroy.o)
+                0x00000360       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Message_GetWindow.o)
  .ARM.attributes
-                0x00000370       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_GetText.o)
+                0x00000370       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Message_SetResult.o)
  .ARM.attributes
-                0x00000380       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_RegisterCallback.o)
+                0x00000380       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_Destroy.o)
  .ARM.attributes
-                0x00000390       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SearchId.o)
+                0x00000390       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_GetText.o)
  .ARM.attributes
-                0x000003a0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetBackAlign.o)
+                0x000003a0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_RegisterCallback.o)
  .ARM.attributes
-                0x000003b0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetFontScale.o)
+                0x000003b0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SearchId.o)
  .ARM.attributes
-                0x000003c0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetText.o)
+                0x000003c0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetBackAlign.o)
  .ARM.attributes
-                0x000003d0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_Create.o)
+                0x000003d0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetFontScale.o)
  .ARM.attributes
-                0x000003e0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_Dispatch.o)
+                0x000003e0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Widget_SetText.o)
  .ARM.attributes
-                0x000003f0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_GetResult.o)
+                0x000003f0       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_Create.o)
  .ARM.attributes
-                0x00000400       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_MainLoop.o)
+                0x00000400       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_Dispatch.o)
  .ARM.attributes
-                0x00000410       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_PreviousFocus.o)
+                0x00000410       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_GetResult.o)
  .ARM.attributes
-                0x00000420       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_link.o)
+                0x00000420       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_MainLoop.o)
  .ARM.attributes
-                0x00000430       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(gl_asm_link.o)
+                0x00000430       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_Window_PreviousFocus.o)
  .ARM.attributes
-                0x00000440       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
+                0x00000440       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(GL_link.o)
  .ARM.attributes
-                0x00000450       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
+                0x00000450       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/GRAPHICLIB.LIB(gl_asm_link.o)
  .ARM.attributes
-                0x00000460       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
+                0x00000460       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
  .ARM.attributes
-                0x00000470       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
+                0x00000470       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000480       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
+                0x00000480       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
  .ARM.attributes
-                0x00000490       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
+                0x00000490       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
  .ARM.attributes
-                0x000004a0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
+                0x000004a0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
  .ARM.attributes
-                0x000004b0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
+                0x000004b0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
  .ARM.attributes
-                0x000004c0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
+                0x000004c0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
  .ARM.attributes
-                0x000004d0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
+                0x000004d0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
  .ARM.attributes
-                0x000004e0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
+                0x000004e0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
  .ARM.attributes
-                0x000004f0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
+                0x000004f0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
  .ARM.attributes
-                0x00000500       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
+                0x00000500       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
  .ARM.attributes
-                0x00000510       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
+                0x00000510       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
  .ARM.attributes
-                0x00000520       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
+                0x00000520       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
  .ARM.attributes
-                0x00000530       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
+                0x00000530       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
  .ARM.attributes
-                0x00000540       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
+                0x00000540       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000550       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
+                0x00000550       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
  .ARM.attributes
-                0x00000560       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
+                0x00000560       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
  .ARM.attributes
-                0x00000570       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
+                0x00000570       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
  .ARM.attributes
-                0x00000580       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
+                0x00000580       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
  .ARM.attributes
-                0x00000590       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
+                0x00000590       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
  .ARM.attributes
-                0x000005a0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
+                0x000005a0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
  .ARM.attributes
-                0x000005b0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
+                0x000005b0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
  .ARM.attributes
-                0x000005c0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
+                0x000005c0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
  .ARM.attributes
-                0x000005d0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
+                0x000005d0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
  .ARM.attributes
-                0x000005e0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
+                0x000005e0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
  .ARM.attributes
-                0x000005f0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
+                0x000005f0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
  .ARM.attributes
-                0x00000600       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
+                0x00000600       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
  .ARM.attributes
-                0x00000610       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
+                0x00000610       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
  .ARM.attributes
-                0x00000620       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
+                0x00000620       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
  .ARM.attributes
-                0x00000630       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
+                0x00000630       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
  .ARM.attributes
-                0x00000640       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
+                0x00000640       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
  .ARM.attributes
-                0x00000650       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
+                0x00000650       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
  .ARM.attributes
-                0x00000660       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
+                0x00000660       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
  .ARM.attributes
-                0x00000670       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
+                0x00000670       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
  .ARM.attributes
-                0x00000680       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
+                0x00000680       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
  .ARM.attributes
-                0x00000690       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
+                0x00000690       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
  .ARM.attributes
-                0x000006a0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
+                0x000006a0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
  .ARM.attributes
-                0x000006b0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_udivsi3.o)
+                0x000006b0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
  .ARM.attributes
-                0x000006c0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_divsi3.o)
+                0x000006c0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
  .ARM.attributes
-                0x000006d0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_umodsi3.o)
+                0x000006d0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_udivsi3.o)
  .ARM.attributes
-                0x000006e0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_dvmd_tls.o)
+                0x000006e0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_divsi3.o)
  .ARM.attributes
-                0x000006f0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_addsubdf3.o)
+                0x000006f0       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_umodsi3.o)
  .ARM.attributes
-                0x00000700       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivdf3.o)
+                0x00000700       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000710       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpdf2.o)
+                0x00000710       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_addsubdf3.o)
  .ARM.attributes
-                0x00000720       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixdfsi.o)
+                0x00000720       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivdf3.o)
  .ARM.attributes
-                0x00000730       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixunsdfsi.o)
+                0x00000730       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpdf2.o)
  .ARM.attributes
-                0x00000740       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_truncdfsf2.o)
+                0x00000740       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixdfsi.o)
  .ARM.attributes
-                0x00000750       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivsf3.o)
+                0x00000750       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixunsdfsi.o)
  .ARM.attributes
-                0x00000760       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
+                0x00000760       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_truncdfsf2.o)
  .ARM.attributes
-                0x00000770       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(upload_diagnostic_txt.o)
+                0x00000770       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivsf3.o)
+ .ARM.attributes
+                0x00000780       0x10 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
+ .ARM.attributes
+                0x00000790       0x10 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/TRAP_TELIUM_PLUS.LIB(upload_diagnostic_txt.o)
 
 .comment        0x00000000       0x23
  .comment       0x00000000       0x12 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/libcpatch.o
@@ -1354,6 +1366,8 @@ OUTPUT(Obj/GNU_ARM_DEBUG_T2/MOON.axf elf32-littlearm)
  .comment       0x00000000       0x12 Obj/GNU_ARM_DEBUG_T2/Sale.o
  .comment       0x00000000       0x12 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
  .comment       0x00000000       0x12 Obj/GNU_ARM_DEBUG_T2/CashBack.o
+ .comment       0x00000000       0x12 Obj/GNU_ARM_DEBUG_T2/CardStripe.o
+ .comment       0x00000000       0x12 Obj/GNU_ARM_DEBUG_T2/PrinterFormat.o
  .comment       0x00000000       0x12 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(extenstp1.o)
  .comment       0x00000000       0x12 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Atoi.o)
  .comment       0x00000000       0x12 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/lib/eft30tplus.lib(Telium_Pprintf.o)
@@ -1401,7 +1415,7 @@ OUTPUT(Obj/GNU_ARM_DEBUG_T2/MOON.axf elf32-littlearm)
  .comment       0x00000000       0x12 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
  .comment       0x00000000       0x12 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
 
-.debug_abbrev   0x00000000     0x46c1
+.debug_abbrev   0x00000000     0x46c3
  .debug_abbrev  0x00000000      0x1ab C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/libcpatch.o
  .debug_abbrev  0x000001ab      0x151 Obj/GNU_ARM_DEBUG_T2/Main.o
  .debug_abbrev  0x000002fc      0x228 Obj/GNU_ARM_DEBUG_T2/Entry.o
@@ -1412,59 +1426,61 @@ OUTPUT(Obj/GNU_ARM_DEBUG_T2/MOON.axf elf32-littlearm)
  .debug_abbrev  0x00000865       0xde Obj/GNU_ARM_DEBUG_T2/Sale.o
  .debug_abbrev  0x00000943      0x119 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
  .debug_abbrev  0x00000a5c       0xde Obj/GNU_ARM_DEBUG_T2/CashBack.o
- .debug_abbrev  0x00000b3a       0xa6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
- .debug_abbrev  0x00000be0       0x85 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
- .debug_abbrev  0x00000c65      0x1a3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
- .debug_abbrev  0x00000e08      0x1f0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
- .debug_abbrev  0x00000ff8       0x89 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
- .debug_abbrev  0x00001081       0x78 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
- .debug_abbrev  0x000010f9       0x94 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
- .debug_abbrev  0x0000118d       0x85 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
- .debug_abbrev  0x00001212      0x229 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
- .debug_abbrev  0x0000143b      0x18d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
- .debug_abbrev  0x000015c8      0x188 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
- .debug_abbrev  0x00001750       0x5b C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
- .debug_abbrev  0x000017ab      0x286 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
- .debug_abbrev  0x00001a31      0x1ee C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
- .debug_abbrev  0x00001c1f      0x160 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
- .debug_abbrev  0x00001d7f       0x89 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
- .debug_abbrev  0x00001e08      0x220 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
- .debug_abbrev  0x00002028      0x197 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
- .debug_abbrev  0x000021bf      0x199 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
- .debug_abbrev  0x00002358      0x1b3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
- .debug_abbrev  0x0000250b      0x188 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
- .debug_abbrev  0x00002693      0x1e3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
- .debug_abbrev  0x00002876       0xce C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
- .debug_abbrev  0x00002944       0x8d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
- .debug_abbrev  0x000029d1       0x76 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
- .debug_abbrev  0x00002a47       0x78 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
- .debug_abbrev  0x00002abf      0x31c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
- .debug_abbrev  0x00002ddb      0x1b7 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
- .debug_abbrev  0x00002f92      0x1c6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
- .debug_abbrev  0x00003158      0x220 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
- .debug_abbrev  0x00003378      0x41c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
- .debug_abbrev  0x00003794      0x197 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
- .debug_abbrev  0x0000392b      0x168 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
- .debug_abbrev  0x00003a93      0x197 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
- .debug_abbrev  0x00003c2a      0x1a0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
- .debug_abbrev  0x00003dca      0x2d9 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
- .debug_abbrev  0x000040a3      0x172 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
- .debug_abbrev  0x00004215      0x337 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
- .debug_abbrev  0x0000454c       0x85 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
- .debug_abbrev  0x000045d1       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_udivsi3.o)
- .debug_abbrev  0x000045e5       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_divsi3.o)
- .debug_abbrev  0x000045f9       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_umodsi3.o)
- .debug_abbrev  0x0000460d       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x00004621       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_addsubdf3.o)
- .debug_abbrev  0x00004635       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivdf3.o)
- .debug_abbrev  0x00004649       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpdf2.o)
- .debug_abbrev  0x0000465d       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixdfsi.o)
- .debug_abbrev  0x00004671       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixunsdfsi.o)
- .debug_abbrev  0x00004685       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_truncdfsf2.o)
- .debug_abbrev  0x00004699       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivsf3.o)
- .debug_abbrev  0x000046ad       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
+ .debug_abbrev  0x00000b3a        0x1 Obj/GNU_ARM_DEBUG_T2/CardStripe.o
+ .debug_abbrev  0x00000b3b        0x1 Obj/GNU_ARM_DEBUG_T2/PrinterFormat.o
+ .debug_abbrev  0x00000b3c       0xa6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x00000be2       0x85 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
+ .debug_abbrev  0x00000c67      0x1a3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
+ .debug_abbrev  0x00000e0a      0x1f0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
+ .debug_abbrev  0x00000ffa       0x89 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
+ .debug_abbrev  0x00001083       0x78 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
+ .debug_abbrev  0x000010fb       0x94 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x0000118f       0x85 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
+ .debug_abbrev  0x00001214      0x229 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
+ .debug_abbrev  0x0000143d      0x18d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
+ .debug_abbrev  0x000015ca      0x188 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
+ .debug_abbrev  0x00001752       0x5b C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
+ .debug_abbrev  0x000017ad      0x286 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
+ .debug_abbrev  0x00001a33      0x1ee C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
+ .debug_abbrev  0x00001c21      0x160 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
+ .debug_abbrev  0x00001d81       0x89 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
+ .debug_abbrev  0x00001e0a      0x220 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
+ .debug_abbrev  0x0000202a      0x197 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
+ .debug_abbrev  0x000021c1      0x199 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
+ .debug_abbrev  0x0000235a      0x1b3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
+ .debug_abbrev  0x0000250d      0x188 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
+ .debug_abbrev  0x00002695      0x1e3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
+ .debug_abbrev  0x00002878       0xce C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
+ .debug_abbrev  0x00002946       0x8d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
+ .debug_abbrev  0x000029d3       0x76 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
+ .debug_abbrev  0x00002a49       0x78 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
+ .debug_abbrev  0x00002ac1      0x31c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
+ .debug_abbrev  0x00002ddd      0x1b7 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
+ .debug_abbrev  0x00002f94      0x1c6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
+ .debug_abbrev  0x0000315a      0x220 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
+ .debug_abbrev  0x0000337a      0x41c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
+ .debug_abbrev  0x00003796      0x197 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
+ .debug_abbrev  0x0000392d      0x168 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
+ .debug_abbrev  0x00003a95      0x197 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
+ .debug_abbrev  0x00003c2c      0x1a0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
+ .debug_abbrev  0x00003dcc      0x2d9 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
+ .debug_abbrev  0x000040a5      0x172 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
+ .debug_abbrev  0x00004217      0x337 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
+ .debug_abbrev  0x0000454e       0x85 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
+ .debug_abbrev  0x000045d3       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x000045e7       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_divsi3.o)
+ .debug_abbrev  0x000045fb       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_umodsi3.o)
+ .debug_abbrev  0x0000460f       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00004623       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_addsubdf3.o)
+ .debug_abbrev  0x00004637       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivdf3.o)
+ .debug_abbrev  0x0000464b       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpdf2.o)
+ .debug_abbrev  0x0000465f       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixdfsi.o)
+ .debug_abbrev  0x00004673       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixunsdfsi.o)
+ .debug_abbrev  0x00004687       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_truncdfsf2.o)
+ .debug_abbrev  0x0000469b       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivsf3.o)
+ .debug_abbrev  0x000046af       0x14 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
 
-.debug_info     0x00000000    0x19d91
+.debug_info     0x00000000    0x19d9c
  .debug_info    0x00000000      0xcb8 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/libcpatch.o
  .debug_info    0x00000cb8     0x23e8 Obj/GNU_ARM_DEBUG_T2/Main.o
  .debug_info    0x000030a0     0x18e7 Obj/GNU_ARM_DEBUG_T2/Entry.o
@@ -1472,62 +1488,64 @@ OUTPUT(Obj/GNU_ARM_DEBUG_T2/MOON.axf elf32-littlearm)
  .debug_info    0x00004ad7      0x4c5 Obj/GNU_ARM_DEBUG_T2/DateScreen.o
  .debug_info    0x00004f9c       0xab Obj/GNU_ARM_DEBUG_T2/Utils.o
  .debug_info    0x00005047      0x137 Obj/GNU_ARM_DEBUG_T2/MenuInterface.o
- .debug_info    0x0000517e      0x29b Obj/GNU_ARM_DEBUG_T2/Sale.o
- .debug_info    0x00005419      0x359 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
- .debug_info    0x00005772      0x28a Obj/GNU_ARM_DEBUG_T2/CashBack.o
- .debug_info    0x000059fc       0xfa C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
- .debug_info    0x00005af6       0xcd C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
- .debug_info    0x00005bc3      0xa3e C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
- .debug_info    0x00006601      0xb2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
- .debug_info    0x0000712d       0xe1 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
- .debug_info    0x0000720e       0xbb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
- .debug_info    0x000072c9       0xcf C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
- .debug_info    0x00007398       0xf3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
- .debug_info    0x0000748b      0xdbd C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
- .debug_info    0x00008248      0x9bd C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
- .debug_info    0x00008c05      0x982 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
- .debug_info    0x00009587       0x75 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
- .debug_info    0x000095fc      0xbf1 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
- .debug_info    0x0000a1ed      0xb1d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
- .debug_info    0x0000ad0a      0x965 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
- .debug_info    0x0000b66f       0xc3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
- .debug_info    0x0000b732      0xc67 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
- .debug_info    0x0000c399      0x9ab C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
- .debug_info    0x0000cd44      0xa6b C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
- .debug_info    0x0000d7af      0xa81 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
- .debug_info    0x0000e230      0x9b6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
- .debug_info    0x0000ebe6      0xa4a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
- .debug_info    0x0000f630      0x146 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
- .debug_info    0x0000f776       0xfb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
- .debug_info    0x0000f871       0xc6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
- .debug_info    0x0000f937       0xb3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
- .debug_info    0x0000f9ea     0x1032 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
- .debug_info    0x00010a1c      0xa54 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
- .debug_info    0x00011470      0xa52 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
- .debug_info    0x00011ec2      0xdda C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
- .debug_info    0x00012c9c     0x18be C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
- .debug_info    0x0001455a      0xa20 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
- .debug_info    0x00014f7a      0x956 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
- .debug_info    0x000158d0      0x9be C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
- .debug_info    0x0001628e      0xa2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
- .debug_info    0x00016cba      0xe49 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
- .debug_info    0x00017b03      0x2fb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
- .debug_info    0x00017dfe     0x154a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
- .debug_info    0x00019348       0xcd C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
- .debug_info    0x00019415       0xcb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_udivsi3.o)
- .debug_info    0x000194e0       0xcb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_divsi3.o)
- .debug_info    0x000195ab       0xcb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_umodsi3.o)
- .debug_info    0x00019676       0xcb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_dvmd_tls.o)
- .debug_info    0x00019741       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_addsubdf3.o)
- .debug_info    0x0001980b       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivdf3.o)
- .debug_info    0x000198d5       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpdf2.o)
- .debug_info    0x0001999f       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixdfsi.o)
- .debug_info    0x00019a69       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixunsdfsi.o)
- .debug_info    0x00019b33       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_truncdfsf2.o)
- .debug_info    0x00019bfd       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivsf3.o)
- .debug_info    0x00019cc7       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
+ .debug_info    0x0000517e      0x2a6 Obj/GNU_ARM_DEBUG_T2/Sale.o
+ .debug_info    0x00005424      0x359 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
+ .debug_info    0x0000577d      0x28a Obj/GNU_ARM_DEBUG_T2/CashBack.o
+ .debug_info    0x00005a07        0x0 Obj/GNU_ARM_DEBUG_T2/CardStripe.o
+ .debug_info    0x00005a07        0x0 Obj/GNU_ARM_DEBUG_T2/PrinterFormat.o
+ .debug_info    0x00005a07       0xfa C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
+ .debug_info    0x00005b01       0xcd C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
+ .debug_info    0x00005bce      0xa3e C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
+ .debug_info    0x0000660c      0xb2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
+ .debug_info    0x00007138       0xe1 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
+ .debug_info    0x00007219       0xbb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
+ .debug_info    0x000072d4       0xcf C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
+ .debug_info    0x000073a3       0xf3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
+ .debug_info    0x00007496      0xdbd C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
+ .debug_info    0x00008253      0x9bd C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
+ .debug_info    0x00008c10      0x982 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
+ .debug_info    0x00009592       0x75 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
+ .debug_info    0x00009607      0xbf1 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
+ .debug_info    0x0000a1f8      0xb1d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
+ .debug_info    0x0000ad15      0x965 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
+ .debug_info    0x0000b67a       0xc3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
+ .debug_info    0x0000b73d      0xc67 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
+ .debug_info    0x0000c3a4      0x9ab C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
+ .debug_info    0x0000cd4f      0xa6b C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
+ .debug_info    0x0000d7ba      0xa81 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
+ .debug_info    0x0000e23b      0x9b6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
+ .debug_info    0x0000ebf1      0xa4a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
+ .debug_info    0x0000f63b      0x146 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
+ .debug_info    0x0000f781       0xfb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
+ .debug_info    0x0000f87c       0xc6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
+ .debug_info    0x0000f942       0xb3 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
+ .debug_info    0x0000f9f5     0x1032 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
+ .debug_info    0x00010a27      0xa54 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
+ .debug_info    0x0001147b      0xa52 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
+ .debug_info    0x00011ecd      0xdda C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
+ .debug_info    0x00012ca7     0x18be C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
+ .debug_info    0x00014565      0xa20 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
+ .debug_info    0x00014f85      0x956 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
+ .debug_info    0x000158db      0x9be C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
+ .debug_info    0x00016299      0xa2c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
+ .debug_info    0x00016cc5      0xe49 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
+ .debug_info    0x00017b0e      0x2fb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
+ .debug_info    0x00017e09     0x154a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
+ .debug_info    0x00019353       0xcd C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
+ .debug_info    0x00019420       0xcb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_udivsi3.o)
+ .debug_info    0x000194eb       0xcb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_divsi3.o)
+ .debug_info    0x000195b6       0xcb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_umodsi3.o)
+ .debug_info    0x00019681       0xcb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0001974c       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_addsubdf3.o)
+ .debug_info    0x00019816       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivdf3.o)
+ .debug_info    0x000198e0       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpdf2.o)
+ .debug_info    0x000199aa       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixdfsi.o)
+ .debug_info    0x00019a74       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixunsdfsi.o)
+ .debug_info    0x00019b3e       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_truncdfsf2.o)
+ .debug_info    0x00019c08       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivsf3.o)
+ .debug_info    0x00019cd2       0xca C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
 
-.debug_line     0x00000000     0x5372
+.debug_line     0x00000000     0x5371
  .debug_line    0x00000000      0x1b2 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/libcpatch.o
  .debug_line    0x000001b2       0xe3 Obj/GNU_ARM_DEBUG_T2/Main.o
  .debug_line    0x00000295      0x267 Obj/GNU_ARM_DEBUG_T2/Entry.o
@@ -1535,60 +1553,62 @@ OUTPUT(Obj/GNU_ARM_DEBUG_T2/MOON.axf elf32-littlearm)
  .debug_line    0x000005a5      0x10b Obj/GNU_ARM_DEBUG_T2/DateScreen.o
  .debug_line    0x000006b0       0x61 Obj/GNU_ARM_DEBUG_T2/Utils.o
  .debug_line    0x00000711       0xa9 Obj/GNU_ARM_DEBUG_T2/MenuInterface.o
- .debug_line    0x000007ba       0xde Obj/GNU_ARM_DEBUG_T2/Sale.o
- .debug_line    0x00000898      0x10e Obj/GNU_ARM_DEBUG_T2/BillManagement.o
- .debug_line    0x000009a6       0xdc Obj/GNU_ARM_DEBUG_T2/CashBack.o
- .debug_line    0x00000a82       0xd8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
- .debug_line    0x00000b5a       0xd6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
- .debug_line    0x00000c30      0x1cd C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
- .debug_line    0x00000dfd      0x1c8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
- .debug_line    0x00000fc5       0x7f C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
- .debug_line    0x00001044       0x81 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
- .debug_line    0x000010c5       0xdc C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
- .debug_line    0x000011a1       0xde C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
- .debug_line    0x0000127f      0x406 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
- .debug_line    0x00001685      0x147 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
- .debug_line    0x000017cc      0x147 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
- .debug_line    0x00001913       0x68 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
- .debug_line    0x0000197b      0x227 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
- .debug_line    0x00001ba2      0x1ba C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
- .debug_line    0x00001d5c      0x132 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
- .debug_line    0x00001e8e      0x12e C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
- .debug_line    0x00001fbc      0x1bf C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
- .debug_line    0x0000217b      0x147 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
- .debug_line    0x000022c2      0x1ba C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
- .debug_line    0x0000247c      0x1a9 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
- .debug_line    0x00002625      0x146 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
- .debug_line    0x0000276b      0x175 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
- .debug_line    0x000028e0       0xfb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
- .debug_line    0x000029db       0xf1 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
- .debug_line    0x00002acc       0x77 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
- .debug_line    0x00002b43       0x81 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
- .debug_line    0x00002bc4      0x38b C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
- .debug_line    0x00002f4f      0x1de C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
- .debug_line    0x0000312d      0x1d6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
- .debug_line    0x00003303      0x3a2 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
- .debug_line    0x000036a5      0x39c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
- .debug_line    0x00003a41      0x1d8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
- .debug_line    0x00003c19      0x144 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
- .debug_line    0x00003d5d      0x1b2 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
- .debug_line    0x00003f0f      0x1df C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
- .debug_line    0x000040ee      0x2a1 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
- .debug_line    0x0000438f      0x13f C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
- .debug_line    0x000044ce      0x40f C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
- .debug_line    0x000048dd       0xdc C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
- .debug_line    0x000049b9       0x90 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_udivsi3.o)
- .debug_line    0x00004a49       0x9c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_divsi3.o)
- .debug_line    0x00004ae5       0x88 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_umodsi3.o)
- .debug_line    0x00004b6d       0x7a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_dvmd_tls.o)
- .debug_line    0x00004be7      0x182 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_addsubdf3.o)
- .debug_line    0x00004d69      0x197 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivdf3.o)
- .debug_line    0x00004f00       0xc4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpdf2.o)
- .debug_line    0x00004fc4       0x8f C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixdfsi.o)
- .debug_line    0x00005053       0x8d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixunsdfsi.o)
- .debug_line    0x000050e0       0xa0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_truncdfsf2.o)
- .debug_line    0x00005180      0x13a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivsf3.o)
- .debug_line    0x000052ba       0xb8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
+ .debug_line    0x000007ba       0xdd Obj/GNU_ARM_DEBUG_T2/Sale.o
+ .debug_line    0x00000897      0x10e Obj/GNU_ARM_DEBUG_T2/BillManagement.o
+ .debug_line    0x000009a5       0xdc Obj/GNU_ARM_DEBUG_T2/CashBack.o
+ .debug_line    0x00000a81        0x0 Obj/GNU_ARM_DEBUG_T2/CardStripe.o
+ .debug_line    0x00000a81        0x0 Obj/GNU_ARM_DEBUG_T2/PrinterFormat.o
+ .debug_line    0x00000a81       0xd8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
+ .debug_line    0x00000b59       0xd6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
+ .debug_line    0x00000c2f      0x1cd C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
+ .debug_line    0x00000dfc      0x1c8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
+ .debug_line    0x00000fc4       0x7f C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
+ .debug_line    0x00001043       0x81 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
+ .debug_line    0x000010c4       0xdc C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
+ .debug_line    0x000011a0       0xde C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
+ .debug_line    0x0000127e      0x406 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
+ .debug_line    0x00001684      0x147 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
+ .debug_line    0x000017cb      0x147 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
+ .debug_line    0x00001912       0x68 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
+ .debug_line    0x0000197a      0x227 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
+ .debug_line    0x00001ba1      0x1ba C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
+ .debug_line    0x00001d5b      0x132 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
+ .debug_line    0x00001e8d      0x12e C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
+ .debug_line    0x00001fbb      0x1bf C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
+ .debug_line    0x0000217a      0x147 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
+ .debug_line    0x000022c1      0x1ba C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
+ .debug_line    0x0000247b      0x1a9 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
+ .debug_line    0x00002624      0x146 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
+ .debug_line    0x0000276a      0x175 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
+ .debug_line    0x000028df       0xfb C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
+ .debug_line    0x000029da       0xf1 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
+ .debug_line    0x00002acb       0x77 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
+ .debug_line    0x00002b42       0x81 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
+ .debug_line    0x00002bc3      0x38b C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
+ .debug_line    0x00002f4e      0x1de C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
+ .debug_line    0x0000312c      0x1d6 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
+ .debug_line    0x00003302      0x3a2 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
+ .debug_line    0x000036a4      0x39c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
+ .debug_line    0x00003a40      0x1d8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
+ .debug_line    0x00003c18      0x144 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
+ .debug_line    0x00003d5c      0x1b2 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
+ .debug_line    0x00003f0e      0x1df C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
+ .debug_line    0x000040ed      0x2a1 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
+ .debug_line    0x0000438e      0x13f C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
+ .debug_line    0x000044cd      0x40f C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
+ .debug_line    0x000048dc       0xdc C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
+ .debug_line    0x000049b8       0x90 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_udivsi3.o)
+ .debug_line    0x00004a48       0x9c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_divsi3.o)
+ .debug_line    0x00004ae4       0x88 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_umodsi3.o)
+ .debug_line    0x00004b6c       0x7a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00004be6      0x182 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_addsubdf3.o)
+ .debug_line    0x00004d68      0x197 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivdf3.o)
+ .debug_line    0x00004eff       0xc4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpdf2.o)
+ .debug_line    0x00004fc3       0x8f C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixdfsi.o)
+ .debug_line    0x00005052       0x8d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_fixunsdfsi.o)
+ .debug_line    0x000050df       0xa0 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_truncdfsf2.o)
+ .debug_line    0x0000517f      0x13a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_muldivsf3.o)
+ .debug_line    0x000052b9       0xb8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
 
 .debug_frame    0x00000000     0x1440
  .debug_frame   0x00000000       0x70 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/libcpatch.o
@@ -1863,7 +1883,7 @@ OUTPUT(Obj/GNU_ARM_DEBUG_T2/MOON.axf elf32-littlearm)
  .debug_aranges
                 0x00000740       0x20 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/lib/gcc/arm-elf/4.3.4/thumb/soft/interwork/libgcc.a(_cmpsf2.o)
 
-.debug_str      0x00000000     0x39ca
+.debug_str      0x00000000     0x39d4
  .debug_str     0x00000000       0x20 C:/Users/User/Documents/SDK11.16.8.PatchC/SDKTPLUS/HW_T2/gnu_434/startfiles/libcpatch.o
  .debug_str     0x00000020      0xe3b Obj/GNU_ARM_DEBUG_T2/Main.o
                                0x1215 (size before relaxing)
@@ -1877,89 +1897,89 @@ OUTPUT(Obj/GNU_ARM_DEBUG_T2/MOON.axf elf32-littlearm)
                                  0x94 (size before relaxing)
  .debug_str     0x00001941       0x95 Obj/GNU_ARM_DEBUG_T2/MenuInterface.o
                                 0x194 (size before relaxing)
- .debug_str     0x000019d6       0x5e Obj/GNU_ARM_DEBUG_T2/Sale.o
-                                0x383 (size before relaxing)
- .debug_str     0x00001a34       0x45 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
+ .debug_str     0x000019d6       0x68 Obj/GNU_ARM_DEBUG_T2/Sale.o
+                                0x38d (size before relaxing)
+ .debug_str     0x00001a3e       0x45 Obj/GNU_ARM_DEBUG_T2/BillManagement.o
                                 0x3c6 (size before relaxing)
- .debug_str     0x00001a79       0x34 Obj/GNU_ARM_DEBUG_T2/CashBack.o
+ .debug_str     0x00001a83       0x34 Obj/GNU_ARM_DEBUG_T2/CashBack.o
                                 0x377 (size before relaxing)
- .debug_str     0x00001aad       0xcf C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
+ .debug_str     0x00001ab7       0xcf C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memcpy.o)
                                 0x16b (size before relaxing)
- .debug_str     0x00001b7c       0x50 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
+ .debug_str     0x00001b86       0x50 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-memset.o)
                                 0x157 (size before relaxing)
- .debug_str     0x00001bcc      0x439 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
+ .debug_str     0x00001bd6      0x439 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sscanf.o)
                                 0x541 (size before relaxing)
- .debug_str     0x00002005       0x82 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
+ .debug_str     0x0000200f       0x82 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-stdio.o)
                                 0x548 (size before relaxing)
- .debug_str     0x00002087       0x50 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
+ .debug_str     0x00002091       0x50 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strchr.o)
                                 0x150 (size before relaxing)
- .debug_str     0x000020d7       0xc8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
+ .debug_str     0x000020e1       0xc8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcpy.o)
                                 0x15d (size before relaxing)
- .debug_str     0x0000219f       0x60 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
+ .debug_str     0x000021a9       0x60 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strlen.o)
                                 0x16c (size before relaxing)
- .debug_str     0x000021ff       0x5e C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
+ .debug_str     0x00002209       0x5e C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncpy.o)
                                 0x175 (size before relaxing)
- .debug_str     0x0000225d      0x149 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
+ .debug_str     0x00002267      0x149 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfscanf.o)
                                 0x66c (size before relaxing)
- .debug_str     0x000023a6       0xc4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
+ .debug_str     0x000023b0       0xc4 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-writer.o)
                                 0x515 (size before relaxing)
- .debug_str     0x0000246a       0x51 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
+ .debug_str     0x00002474       0x51 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-closer.o)
                                 0x505 (size before relaxing)
- .debug_str     0x000024bb       0xba C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
+ .debug_str     0x000024c5       0xba C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ctype_.o)
                                  0xd9 (size before relaxing)
- .debug_str     0x00002575      0x123 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
+ .debug_str     0x0000257f      0x123 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-findfp.o)
                                 0x5fb (size before relaxing)
- .debug_str     0x00002698       0x6c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
+ .debug_str     0x000026a2       0x6c C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fwalk.o)
                                 0x53c (size before relaxing)
- .debug_str     0x00002704       0x54 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
+ .debug_str     0x0000270e       0x54 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-impure.o)
                                 0x521 (size before relaxing)
- .debug_str     0x00002758       0x53 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
+ .debug_str     0x00002762       0x53 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-iswspace.o)
                                 0x167 (size before relaxing)
- .debug_str     0x000027ab      0x26e C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
+ .debug_str     0x000027b5      0x26e C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-locale.o)
                                 0x763 (size before relaxing)
- .debug_str     0x00002a19       0x51 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
+ .debug_str     0x00002a23       0x51 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-lseekr.o)
                                 0x513 (size before relaxing)
- .debug_str     0x00002a6a       0xd8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
+ .debug_str     0x00002a74       0xd8 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbrtowc.o)
                                 0x541 (size before relaxing)
- .debug_str     0x00002b42       0x6a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
+ .debug_str     0x00002b4c       0x6a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mbtowc_r.o)
                                 0x549 (size before relaxing)
- .debug_str     0x00002bac       0x4f C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
+ .debug_str     0x00002bb6       0x4f C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-readr.o)
                                 0x513 (size before relaxing)
- .debug_str     0x00002bfb       0x81 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
+ .debug_str     0x00002c05       0x81 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-reent.o)
                                 0x546 (size before relaxing)
- .debug_str     0x00002c7c       0xf5 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
+ .debug_str     0x00002c86       0xf5 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-s_fpclassify.o)
                                 0x1a9 (size before relaxing)
- .debug_str     0x00002d71       0x5d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
+ .debug_str     0x00002d7b       0x5d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sccl.o)
                                 0x15c (size before relaxing)
- .debug_str     0x00002dce       0x4e C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
+ .debug_str     0x00002dd8       0x4e C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-sf_nan.o)
                                 0x16e (size before relaxing)
- .debug_str     0x00002e1c       0x58 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
+ .debug_str     0x00002e26       0x58 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strcmp.o)
                                 0x15d (size before relaxing)
- .debug_str     0x00002e74      0x1ff C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
+ .debug_str     0x00002e7e      0x1ff C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtod.o)
                                 0x6f2 (size before relaxing)
- .debug_str     0x00003073       0x74 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
+ .debug_str     0x0000307d       0x74 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtol.o)
                                 0x547 (size before relaxing)
- .debug_str     0x000030e7       0x5d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
+ .debug_str     0x000030f1       0x5d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strtoul.o)
                                 0x54a (size before relaxing)
- .debug_str     0x00003144       0x3d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
+ .debug_str     0x0000314e       0x3d C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-svfiscanf.o)
                                 0x647 (size before relaxing)
- .debug_str     0x00003181      0x393 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
+ .debug_str     0x0000318b      0x393 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-syscalls.o)
                                 0x847 (size before relaxing)
- .debug_str     0x00003514       0x63 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
+ .debug_str     0x0000351e       0x63 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-ungetc.o)
                                 0x527 (size before relaxing)
- .debug_str     0x00003577       0xb9 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
+ .debug_str     0x00003581       0xb9 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-errno.o)
                                 0x509 (size before relaxing)
- .debug_str     0x00003630       0x59 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
+ .debug_str     0x0000363a       0x59 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fclose.o)
                                 0x51d (size before relaxing)
- .debug_str     0x00003689       0x6a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
+ .debug_str     0x00003693       0x6a C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-fflush.o)
                                 0x543 (size before relaxing)
- .debug_str     0x000036f3      0x105 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
+ .debug_str     0x000036fd      0x105 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-gethex.o)
                                 0x6ed (size before relaxing)
- .debug_str     0x000037f8       0x60 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
+ .debug_str     0x00003802       0x60 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-gdtoa-hexnan.o)
                                 0x286 (size before relaxing)
- .debug_str     0x00003858      0x120 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
+ .debug_str     0x00003862      0x120 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-mprec.o)
                                 0x615 (size before relaxing)
- .debug_str     0x00003978       0x52 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
+ .debug_str     0x00003982       0x52 C:/Users/User/Documents/IngeDev_8.18.0.5/toolchains/gnuArm4/arm-elf/lib/thumb/soft/interwork/libc.a(lib_a-strncmp.o)
                                 0x159 (size before relaxing)
 
 .debug_loc      0x00000000     0x83db
