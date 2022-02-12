@@ -69,7 +69,7 @@ int saleMenuPassword(void){
 	lblPassword:
 	entry = GL_Dialog_Password(mGoal, "PASSWORD", "Enter Password :", pmask, password, sizeof(password), GL_TIME_MINUTE);
 
-//	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
+	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
 	//verification of password
 	int ver = atoi(password);
 		if (ver != 1234){
