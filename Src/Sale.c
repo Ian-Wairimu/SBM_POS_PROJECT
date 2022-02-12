@@ -66,6 +66,7 @@ int saleMenuPassword(void){
 
 	//display a dialog that will prompt user to enter password
 //	smartCard();
+	lblPassword:
 	entry = GL_Dialog_Password(mGoal, "PASSWORD", "Enter Password :", pmask, password, sizeof(password), GL_TIME_MINUTE);
 	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
 
@@ -76,12 +77,12 @@ int saleMenuPassword(void){
 			Beep(0x08,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
 
 			entry = GL_Dialog_Message(mGoal, "PASSWORD"," PASSWORD CANNOT BE NULL!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
-		return EXIT_SUCCESS;
+			goto lblPassword;
 			}
 		else if (strlen(password) < 4) {
 			entry = GL_Dialog_Message(mGoal, "PASSWORD","PASSWORD MUST BE \n EQUAL TO FOUR DIGITS!!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
-		return EXIT_SUCCESS;
-			}
+			goto lblPassword;
+		}
 		else{
 			entry = GL_Dialog_Message(mGoal, "PASSWORD","VALIDATING PASSWORD!" , GL_ICON_INFORMATION, GL_BUTTON_NONE, 2 * 1000);
 			return EXIT_SUCCESS;

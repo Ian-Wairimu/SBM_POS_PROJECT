@@ -19,6 +19,7 @@ int billMenuDisplay(void){
 	//Return
 	int ret;
 
+	lblBill:
 	entry = GL_Dialog_Text(mGoal, NULL, "Enter Bill :", "/d/d/d/d/d/d/d/d", billNo, sizeof(billNo) - 1, GL_TIME_MINUTE);
 	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
 	//control flow of my bill validation number input
@@ -26,7 +27,7 @@ int billMenuDisplay(void){
 	//checks where the bill is null and will throw an error if it will be null
 	if(strlen(billNo) == NULL){
 		entry = GL_Dialog_Message(mGoal, "BILL NUMBER","BILL NUMBER CANNOT BE NULL!!!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
-		return EXIT_SUCCESS;
+		goto lblBill;
 		}
 	//===============================================
 	//gave my bill number an input size on integer = 6
@@ -42,7 +43,7 @@ int billMenuDisplay(void){
 		 Beep(0x08,0x03,5,BEEP_ON|BEEP_WAIT|BEEP_OFF);
 
 		entry = GL_Dialog_Message(mGoal, "BILL NUMBER","Bill NO TO SMALL!!!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
-		return EXIT_SUCCESS;
+		goto lblBill;
 		}
 	//=================================================
 	//will through a validating message if the bill number will be equal to 6
@@ -76,12 +77,14 @@ int billingAmount(void){
 
 	ulong entry;
 	int ret;
+
+	lblBillAmount:
 	entry = GL_Dialog_Amount(mGoal, "AMOUNT", "Enter amount :", "/d/d/d,/d/d/D./D/D", amount, sizeof(amount) - 5, curr, GL_ALIGN_LEFT, GL_TIME_MINUTE);
 	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
 
 		if(strlen(amount) == NULL){
 				entry = GL_Dialog_Message(mGoal, "AMOUNT","AMOUNT CANNOT BE NULL!!!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
-				return EXIT_SUCCESS;
+				goto lblBillAmount;
 			}
 			//============================================
 		else if (strlen(amount) != NULL){

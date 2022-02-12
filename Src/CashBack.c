@@ -18,18 +18,19 @@ int cashBackMenuDisplay(void){
 
 	memset(amount, 0, sizeof(amount));
 
+	lblAmount:
 	entry = GL_Dialog_Amount(mGoal, NULL, "Enter Amount :", "/d/d/d/D./D/D", amount, sizeof(amount), curr, GL_ALIGN_LEFT, GL_TIME_MINUTE);
 	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
 	if(strlen(amount) == NULL){
 			entry = GL_Dialog_Message(mGoal, "AMOUNT","AMOUNT CANNOT BE NULL!!!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
-			return EXIT_SUCCESS;
-		}
+			goto lblAmount;
+	}
 		//=============================================
 		//it will check if the input amount is greater that 5000
 		//and if it is greater it will throw an exception
 		if(amtConv > 5000.00){
 			entry = GL_Dialog_Message(mGoal, "AMOUNT","AMOUNT MORE THAN LIMIT!!!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
-			return EXIT_SUCCESS;
+			goto lblAmount;
 		}
 		//============================================
 				//prompt the user to insert card
@@ -55,11 +56,12 @@ int cashBackAmt(void){
 
 	memset(cash, 0, sizeof(cash));
 
+	lblCashBack:
 	entry = GL_Dialog_Amount(mGoal, NULL, "Enter CashBack Amount :", "/d/d/d/d/d/D./D/D", cash, sizeof(cash), curr, GL_ALIGN_LEFT, GL_TIME_MINUTE);
 	CHECK((entry != GL_KEY_CANCEL) && (entry != GL_RESULT_INACTIVITY) , cancelled);
 	if(strlen(cash) == NULL){
 		entry = GL_Dialog_Message(mGoal, "AMOUNT","AMOUNT CANNOT BE NULL!!!" , GL_ICON_ERROR, GL_BUTTON_NONE, 1000);
-		return EXIT_SUCCESS;
+		goto lblCashBack;
 		}
 	else {
 		entry = GL_Dialog_Message(mGoal, "AMOUNT","INSERT/SWIPE CARD" , GL_ICON_INFORMATION, GL_BUTTON_NONE, 1000);
